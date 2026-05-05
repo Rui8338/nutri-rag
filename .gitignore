@@ -1,0 +1,35 @@
+# Ambiente Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+venv/
+env/
+.env
+
+# Conda
+.conda/
+
+# Dados (não commits PDFs nem XLSX)
+data/sources/*.pdf
+data/sources/*.xlsx
+data/sources/*.csv
+data/processed/
+
+# Resultados de testes
+tests/eval_results.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
