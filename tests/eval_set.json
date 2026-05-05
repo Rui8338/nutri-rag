@@ -1,0 +1,74 @@
+{
+  "evals": [
+    {
+      "id": 1,
+      "query": "quanto proteina precisa um atleta de forca?",
+      "expected_keywords": ["1.6", "2.2", "proteína", "atleta"],
+      "expected_source": "ISSN_Protein",
+      "category": "athletic_nutrition"
+    },
+    {
+      "id": 2,
+      "query": "qual e a porcao recomendada de cereais por dia?",
+      "expected_keywords": ["cereais", "porção", "pão", "50g"],
+      "expected_source": "DGS_Roda",
+      "category": "food_portions"
+    },
+    {
+      "id": 3,
+      "query": "quanto sal se deve comer por dia?",
+      "expected_keywords": ["5g", "sal", "sódio", "inferior"],
+      "expected_source": "DGS_Roda",
+      "category": "micronutrients"
+    },
+    {
+    "id": 4,
+    "query": "qual e a importancia da proteina apos o exercicio?",
+    "expected_keywords": ["síntese", "muscular", "recuperação", "exercício"],
+    "expected_source": "ISSN_Protein",
+    "category": "nutrient_timing"
+    },
+    {
+      "id": 5,
+      "query": "quais sao os grupos alimentares principais?",
+      "expected_keywords": ["cereais", "fruta", "laticínios", "grupos"],
+      "expected_source": "DGS_Roda",
+      "category": "food_groups"
+    },
+    {
+      "id": 6,
+      "query": "quantas porcoes de fruta se deve comer por dia?",
+      "expected_keywords": ["fruta", "porção", "dia"],
+      "expected_source": "DGS_Roda",
+      "category": "food_portions"
+    },
+    {
+      "id": 7,
+      "query": "a suplementacao de proteina e necessaria para atletas?",
+      "expected_keywords": ["proteína", "atleta", "suplementação", "dieta"],
+      "expected_source": "ISSN_Protein",
+      "category": "athletic_nutrition"
+    },
+    {
+      "id": 8,
+      "query": "quais os alimentos ricos em fibra?",
+      "expected_keywords": ["fibra", "leguminosas", "cereais", "alimentos"],
+      "expected_source": "Distribuicao_Alim",
+      "category": "micronutrients"
+    },
+    {
+      "id": 9,
+      "query": "qual e a diferenca nutricional entre atleta e pessoa sedentaria?",
+      "expected_keywords": ["atleta", "proteína", "necessidades", "sedentário"],
+      "expected_source": "ISSN_Protein",
+      "category": "athletic_nutrition"
+    },
+    {
+      "id": 10,
+      "query": "o que sao hidratos de carbono e qual a sua funcao?",
+      "expected_keywords": ["energia", "hidratos", "carbono", "cereais"],
+      "expected_source": "Distribuicao_Alim",
+      "category": "macronutrients"
+    }
+  ]
+}
