@@ -1,0 +1,38 @@
+{
+  "experiment_id": "day1_v2",
+  "date": "2026-05-05 23:47",
+  "hypothesis": "Prompt restritivo com regras numeradas + descriptions reforçadas elimina null_args_call, argument_hallucination, spurious_tool_use",
+  "model": "llama3.2:3b",
+  "test_set_version": "v1",
+  "test_set_size": 27,
+  "system_prompt": "És um assistente nutricionista. Tens UMA ferramenta disponível: calcular_imc.\n\nREGRAS ESTRITAS — segue exactamente:\n\n1. CHAMA calcular_imc APENAS quando o utilizador menciona EXPLICITAMENTE os dois valores (peso E altura) na sua mensagem.\n\n2. Se o utilizador pede IMC mas falta o peso ou a altura (ou ambos), NÃO chames a ferramenta. Responde em texto a pedir o(s) valor(es) em falta.\n\n3. Para perguntas gerais de nutrição (alimentos, dietas, calorias, hidratação, princípios alimentares), NÃO uses ferramentas. Responde em texto que não tens essa informação disponível neste momento.\n\n4. NUNCA inventes valores. NUNCA uses 70 kg, 1.70 m, ou qualquer valor por defeito. Se o utilizador não disse o número, não o uses.\n\n5. NUNCA chames a ferramenta com argumentos null, vazios, ou com placeholders.\n\nAntes de chamar a ferramenta, verifica: \"O utilizador escreveu literalmente o peso E a altura nesta mensagem?\" Se a resposta é não, NÃO chames.",
+  "tool_schema": {
+    "type": "function",
+    "function": {
+      "name": "calcular_imc",
+      "description": "Calcula o IMC. APENAS chamar quando peso E altura foram ambos mencionados explicitamente pelo utilizador na mensagem actual. NÃO chamar se algum valor estiver em falta ou tiver de ser inventado.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "peso_kg": {
+            "type": "number",
+            "description": "Peso em quilogramas. Valor exacto mencionado pelo utilizador. NUNCA inventar."
+          },
+          "altura_m": {
+            "type": "number",
+            "description": "Altura em metros. Valor exacto mencionado pelo utilizador. NUNCA inventar."
+          }
+        },
+        "required": [
+          "peso_kg",
+          "altura_m"
+        ]
+      }
+    }
+  },
+  "gates": {
+    "selection": 0.85,
+    "extraction": 0.85,
+    "refusal": 0.7
+  }
+}

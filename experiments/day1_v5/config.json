@@ -1,0 +1,110 @@
+{
+  "experiment_id": "day1_v5",
+  "date": "2026-05-07 22:26",
+  "hypothesis": "Adicionar 2 exemplos few-shot ao Qwen 2.5 3B (1 anti-prior 80 em formulação não-canónica, 1 anti-hallucination em D com altura-primeiro) resolve os 2 wrong_arguments e empurra refusal acima de 70%.",
+  "model": "qwen2.5:3b-instruct",
+  "test_set_version": "v1",
+  "test_set_size": 27,
+  "system_prompt": "És um assistente nutricionista. Tens acesso à ferramenta calcular_imc.\n\nRegras:\n1. Chama calcular_imc apenas quando o utilizador fornece peso E altura na mensagem.\n2. Se faltar algum valor, pede-o em texto.\n3. Para perguntas gerais de nutrição, responde em texto.\n4. Nunca inventes valores. Nunca chames a ferramenta com argumentos null.\n\nSegue o estilo dos exemplos abaixo.",
+  "tool_schema": {
+    "type": "function",
+    "function": {
+      "name": "calcular_imc",
+      "description": "Calcula o Índice de Massa Corporal (IMC). Chamar apenas quando peso e altura foram ambos fornecidos.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "peso_kg": {
+            "type": "number",
+            "description": "Peso em quilogramas"
+          },
+          "altura_m": {
+            "type": "number",
+            "description": "Altura em metros"
+          }
+        },
+        "required": [
+          "peso_kg",
+          "altura_m"
+        ]
+      }
+    }
+  },
+  "few_shot_messages": [
+    {
+      "role": "user",
+      "content": "Tenho 78kg e 1.82m, qual o meu IMC?"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "function": {
+            "name": "calcular_imc",
+            "arguments": {
+              "peso_kg": 78,
+              "altura_m": 1.82
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "Quantas calorias tem uma banana?"
+    },
+    {
+      "role": "assistant",
+      "content": "Não tenho informação sobre o conteúdo calórico de alimentos específicos disponível neste momento. Posso ajudar-te a calcular o IMC se me deres o peso e altura."
+    },
+    {
+      "role": "user",
+      "content": "Calcula o meu IMC"
+    },
+    {
+      "role": "assistant",
+      "content": "Para calcular o IMC preciso do teu peso (em kg) e da tua altura (em metros). Podes dizer-me esses valores?"
+    },
+    {
+      "role": "user",
+      "content": "Peso 80kg, qual é o meu IMC?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tenho o peso (80 kg) mas falta-me a altura. Podes dizer-me a tua altura em metros?"
+    },
+    {
+      "role": "user",
+      "content": "73 kg e 1.65 m, é bom?"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "function": {
+            "name": "calcular_imc",
+            "arguments": {
+              "peso_kg": 73,
+              "altura_m": 1.65
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "Qual é o meu IMC? Meço 1.70m"
+    },
+    {
+      "role": "assistant",
+      "content": "Tenho a altura (1.70 m) mas falta-me o peso. Podes dizer-me o teu peso em quilogramas?"
+    }
+  ],
+  "gates": {
+    "selection": 0.85,
+    "extraction": 0.85,
+    "refusal": 0.7
+  }
+}

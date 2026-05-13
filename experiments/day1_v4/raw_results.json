@@ -1,0 +1,446 @@
+[
+  {
+    "query": "Qual é o meu Índice de Massa Corporal se peso 75kg e tenho 1.80m?",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 75,
+      "altura_m": 1.8
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.8,
+      "peso_kg": 75
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Calcula-me o IMC: 68 kg, 1.65 m",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 68,
+      "altura_m": 1.65
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.65,
+      "peso_kg": 68
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Tenho 92 quilos e 1.78 metros. Qual o meu IMC?",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 92,
+      "altura_m": 1.78
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.78,
+      "peso_kg": 80
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": false,
+    "refusal_ok": null,
+    "failure_mode": "wrong_arguments"
+  },
+  {
+    "query": "IMC para 55kg e 1.60m?",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 55,
+      "altura_m": 1.6
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.6,
+      "peso_kg": 55
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Quanto é o índice de massa corporal de uma pessoa com 80 kg e 1 metro e 75?",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 80,
+      "altura_m": 1.75
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.75,
+      "peso_kg": 80
+    },
+    "actual_text": "Não consegui calcular o IMC diretamente pois faltou a altura. Se a tua altura for de 1 metro e 75 centímetros, isso equivale a 1.75 metros.\n\nVamos usar essa informação para calcular o IMC:\n\nростo_em_m",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Peso 70.5 kg, mede 1.72 m, calcula o IMC",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 70.5,
+      "altura_m": 1.72
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.72,
+      "peso_kg": 70.5
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Diz-me o IMC: peso 110 kg, altura 1.85 m",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 110,
+      "altura_m": 1.85
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "peso_kg": 110,
+      "altura_m": 1.85
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Meu IMC com 63kg para 1.68m",
+    "category": "A",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 63,
+      "altura_m": 1.68
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.68,
+      "peso_kg": 63
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Estou saudável? Tenho 82kg para 1.72m",
+    "category": "B",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 82,
+      "altura_m": 1.72
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.72,
+      "peso_kg": 82
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Será que estou acima do peso? 90 kg, 1.75 m",
+    "category": "B",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 90,
+      "altura_m": 1.75
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.75,
+      "peso_kg": 90
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "65 kg e 1.60 m — está bem?",
+    "category": "B",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 65,
+      "altura_m": 1.6
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.6,
+      "peso_kg": 80
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": false,
+    "refusal_ok": null,
+    "failure_mode": "wrong_arguments"
+  },
+  {
+    "query": "Tenho 1.68m e peso 58kg. É normal?",
+    "category": "B",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 58,
+      "altura_m": 1.68
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.68,
+      "peso_kg": 58
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Acho que estou gordo. Peso 95kg e meço 1.78m",
+    "category": "B",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 95,
+      "altura_m": 1.78
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.78,
+      "peso_kg": 95
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Sou magro? 50kg, 1.70m",
+    "category": "B",
+    "expected_behavior": "call",
+    "expected_args": {
+      "peso_kg": 50,
+      "altura_m": 1.7
+    },
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.7,
+      "peso_kg": 50
+    },
+    "actual_text": "",
+    "selection_ok": true,
+    "extraction_ok": true,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "O que são macronutrientes?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Macronutrientes são substâncias essenciais para a nossa saúde e funcionamento que fornecem energia à nossa dieta. Os principais tipos de macronutrientes são proteínas, gorduras e hidratos de carbono. ",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Devo comer hidratos à noite?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Comer hidratos de carbono à noite não é prejudicial se for parte de uma dieta equilibrada e saudável. No entanto, o momento da ingestão pode ser importante dependendo do teu estilo de vida e objetivos",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Quantas calorias tem uma maçã?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Não tenho informação específica sobre o conteúdo calórico de uma maçã. Posso ajudar com calculos de IMC se forneceres peso e altura.",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Qual é a diferença entre proteína animal e vegetal?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "A diferença entre proteínas de origem animal e vegetal reside principalmente no tipo de aminoácidos essenciais que contêm, embora existam outros fatores importantes. As proteínas de origem animal gera",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Como melhorar a minha alimentação?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Para melhorar a sua alimentação, você pode considerar seguir uma dieta equilibrada que inclui frutas, legumes variados, grãos integrais, iogurtes naturais e proteínas magras como peixes e lentilhas. É",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "O que é a dieta mediterrânica?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "A Dieta Mediterrânica é uma abordagem alimentar baseada nas dietas típicas da região do Mar Egeu, que inclui uma variedade de alimentos saudáveis como frutas e legumes frescos, vegetais, sementes (com",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Quanta água devo beber por dia?",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "A quantidade de água que deve ser bebida diariamente pode variar dependendo da idade, do sexo e das atividades físicas. Como regra geral, uma estimativa aproximada é beber entre 2 litros (8x copos de ",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Qual é o meu peso ideal? Tenho 1.75m",
+    "category": "C",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Para determinar um peso ideal, precisamos do teu IMC ou da tua altura e peso. Já forneceste a tua altura (1.75m), mas falta-me saber se já calculaste o teu IMC ou tens algum valor para ele. Caso ainda",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": null,
+    "failure_mode": null
+  },
+  {
+    "query": "Calcula-me o IMC",
+    "category": "D",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Para calcular o IMC preciso da mesma vez a tua altura. Vouas dizer-me qual é essa altura em metros?",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": true,
+    "failure_mode": null
+  },
+  {
+    "query": "Qual é o meu IMC?",
+    "category": "D",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "no_call",
+    "actual_args": null,
+    "actual_text": "Para calcular o IMC precisamos da tua altura em metros. Poderias fornecer essa informação por favor?",
+    "selection_ok": true,
+    "extraction_ok": null,
+    "refusal_ok": true,
+    "failure_mode": null
+  },
+  {
+    "query": "Peso 70kg, e o IMC?",
+    "category": "D",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.63,
+      "peso_kg": 70
+    },
+    "actual_text": "",
+    "selection_ok": false,
+    "extraction_ok": null,
+    "refusal_ok": false,
+    "failure_mode": "argument_hallucination"
+  },
+  {
+    "query": "Qual é o meu IMC? Tenho 1.75m de altura",
+    "category": "D",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.75,
+      "peso_kg": 80
+    },
+    "actual_text": "",
+    "selection_ok": false,
+    "extraction_ok": null,
+    "refusal_ok": false,
+    "failure_mode": "argument_hallucination"
+  },
+  {
+    "query": "Tenho 1.68m, qual é o IMC com isto?",
+    "category": "D",
+    "expected_behavior": "no_call",
+    "expected_args": null,
+    "actual_decision": "call",
+    "actual_args": {
+      "altura_m": 1.68,
+      "peso_kg": 80
+    },
+    "actual_text": "",
+    "selection_ok": false,
+    "extraction_ok": null,
+    "refusal_ok": false,
+    "failure_mode": "argument_hallucination"
+  }
+]

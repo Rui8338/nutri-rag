@@ -1,0 +1,38 @@
+{
+  "experiment_id": "day1_v1",
+  "date": "2026-05-05 23:40",
+  "hypothesis": "Llama 3.2 3B faz tool calling fiável com prompt minimalista",
+  "model": "llama3.2:3b",
+  "test_set_version": "v1",
+  "test_set_size": 27,
+  "system_prompt": "És um assistente nutricionista. Tens acesso a uma ferramenta para calcular IMC.\nUsa a ferramenta apenas quando o utilizador pede explícita ou implicitamente o cálculo do IMC E fornece peso e altura.\nSe faltarem dados, pede-os em vez de inventar valores.\nPara perguntas gerais sobre nutrição, responde directamente sem usar ferramentas.",
+  "tool_schema": {
+    "type": "function",
+    "function": {
+      "name": "calcular_imc",
+      "description": "Calcula o Índice de Massa Corporal (IMC) de uma pessoa.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "peso_kg": {
+            "type": "number",
+            "description": "Peso em quilogramas"
+          },
+          "altura_m": {
+            "type": "number",
+            "description": "Altura em metros"
+          }
+        },
+        "required": [
+          "peso_kg",
+          "altura_m"
+        ]
+      }
+    }
+  },
+  "gates": {
+    "selection": 0.85,
+    "extraction": 0.85,
+    "refusal": 0.7
+  }
+}

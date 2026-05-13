@@ -1,0 +1,50 @@
+{
+  "overall": {
+    "selection_accuracy": 0.963,
+    "extraction_accuracy": 1.0,
+    "refusal_accuracy": 0.8,
+    "total_queries": 27
+  },
+  "per_category": {
+    "A": {
+      "n": 8,
+      "selection_ok": 8,
+      "selection_pct": 1.0
+    },
+    "B": {
+      "n": 6,
+      "selection_ok": 6,
+      "selection_pct": 1.0
+    },
+    "C": {
+      "n": 8,
+      "selection_ok": 8,
+      "selection_pct": 1.0
+    },
+    "D": {
+      "n": 5,
+      "selection_ok": 4,
+      "selection_pct": 0.8
+    }
+  },
+  "gate_status": {
+    "selection": {
+      "threshold": 0.85,
+      "actual": 0.963,
+      "passed": true
+    },
+    "extraction": {
+      "threshold": 0.85,
+      "actual": 1.0,
+      "passed": true
+    },
+    "refusal": {
+      "threshold": 0.7,
+      "actual": 0.8,
+      "passed": true
+    }
+  },
+  "failure_modes": {
+    "argument_hallucination": 1
+  }
+}
