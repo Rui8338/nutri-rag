@@ -1,0 +1,91 @@
+{
+  "version": "day4_v1",
+  "description": "Test set para eval do agent loop com RAG. 8 queries focadas em retrieval.",
+  "queries": [
+    {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": ["routing", "retrieval_relevance", "source_diversity"]
+    },
+    {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": ["routing", "retrieval_relevance", "source_diversity"]
+    },
+    {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": ["routing", "retrieval_relevance", "source_diversity"]
+    },
+    {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": ["routing", "retrieval_relevance", "source_diversity"]
+    },
+    {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão grelhado?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": ["routing", "no_match_handling"]
+    },
+    {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": ["routing"]
+    }
+  ]
+}

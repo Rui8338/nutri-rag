@@ -1,0 +1,29 @@
+{
+  "total_queries": 8,
+  "routing_accuracy": 0.875,
+  "retrieval_relevance": 1.0,
+  "source_diversity": 0.5,
+  "no_match_handling": 0.0,
+  "by_category": {
+    "rag_positive": {
+      "total": 4,
+      "routing_correct": 4,
+      "accuracy": 1.0
+    },
+    "cross_tool": {
+      "total": 2,
+      "routing_correct": 1,
+      "accuracy": 0.5
+    },
+    "rag_no_match": {
+      "total": 1,
+      "routing_correct": 1,
+      "accuracy": 1.0
+    },
+    "subjective": {
+      "total": 1,
+      "routing_correct": 1,
+      "accuracy": 1.0
+    }
+  }
+}

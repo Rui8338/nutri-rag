@@ -1,0 +1,293 @@
+[
+  {
+    "query_def": {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.22",
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.593,
+        0.567,
+        0.522
+      ],
+      "response_text": "De acordo com a literatura científica, comer hidratos de carbono à noite não é considerado prejudicial para a saúde, desde que o teu consumo total seja adequado às tuas necessidades energéticas diárias e ao teu estilo de vida. A distribuição dos macronutrientes (hidratos de carbono, proteínas e gord"
+    },
+    "elapsed_seconds": 9.53
+  },
+  {
+    "query_def": {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "fibra alimentar benefícios saúde intestina",
+        "original_query": "Quais são os benefícios da fibra alimentar?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "ISSN_Protein, p.11",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.711,
+        0.535,
+        0.513
+      ],
+      "response_text": "A fibra alimentar oferece vários benefícios para a saúde e o desempenho. Ela pode ajudar a melhorar a composição corporal, contribuindo para um aumento de massa muscular e hipertrofia após treino resistente, especialmente quando comparada com proteínas vegetais que geralmente contêm menos ácidos gra"
+    },
+    "elapsed_seconds": 5.52
+  },
+  {
+    "query_def": {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "metabolismo proteínas organismo funcionamento",
+        "original_query": "Como é metabolizada a proteína no organismo?"
+      },
+      "sources": [
+        "ISSN_Protein, p.25",
+        "ISSN_Protein, p.17",
+        "ISSN_Protein, p.16"
+      ],
+      "scores": [
+        0.622,
+        0.62,
+        0.616
+      ],
+      "response_text": "A fibra alimentar é importante para a saúde porque tem vários benefícios:\n\n1. **Promove o funcionamento saudável do trato gastrointestinal**: A fibra ajuda a manter a função intestinal regular e pode ajudar a prevenir ou controlar doenças como a obstrução intestinal, constipação e cólicas.\n\n2. **Aju"
+    },
+    "elapsed_seconds": 419.36
+  },
+  {
+    "query_def": {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "sódio consumo diário recomendado saúde",
+        "original_query": "Quanto sódio devo consumir por dia?"
+      },
+      "sources": [
+        "DGS_Roda, p.3",
+        "Distribuicao_Alim, p.20",
+        "Distribuicao_Alim, p.54"
+      ],
+      "scores": [
+        0.758,
+        0.598,
+        0.578
+      ],
+      "response_text": "De acordo com as recomendações da DGS (Direção-Geral de Saúde) e outras fontes citadas, a quantidade de sal (sódio) que devemos consumir por dia deve ser inferior a 5g. Além disso, para a distribuição dos macronutrientes (hidratos de carbono, lipídicos e proteínas), as recomendações da OMS (Organiza"
+    },
+    "elapsed_seconds": 6.53
+  },
+  {
+    "query_def": {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": false,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Para obter essa informação, preciso do nome específico do alimento. Podes dizer qual é o salmão que te interessa? Por exemplo, 'salmão grelhado' ou 'salmão assado'."
+    },
+    "elapsed_seconds": 2.24
+  },
+  {
+    "query_def": {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "sexo": "masculino",
+        "altura_cm": 178,
+        "fator_atividade": "moderado",
+        "idade": 30,
+        "peso_kg": 75
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "Com base nos dados que forneceste, o teu gasto calórico diário (TDEE) é de aproximadamente 2662 kcal."
+    },
+    "elapsed_seconds": 2.28
+  },
+  {
+    "query_def": {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": [
+        "routing",
+        "no_match_handling"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "shiitake benefícios saúde nutrientes",
+        "original_query": "Quais são os benefícios do cogumelo shiitake?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.42",
+        "Distribuicao_Alim, p.51"
+      ],
+      "scores": [
+        0.707,
+        0.687,
+        0.682
+      ],
+      "response_text": "Os benefícios do cogumelo shiitake incluem:\n\n- **Fibra**: Este é um dos nutrientes mais notáveis no shiitake. A fibra pode ajudar a melhorar o funcionamento intestinal e reduzir os níveis de colesterol.\n  \n- **Antioxidantes**: O shiitake contém antioxidantes que podem ajudar a combater os radicais l"
+    },
+    "elapsed_seconds": 7.26
+  },
+  {
+    "query_def": {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Não posso fornecer conselhos nutricionais personalizados, como se deve ou não seguir uma determinada dieta. Recomendo consultar um nutricionista ou profissional de saúde para obter orientações adequadas às tuas necessidades específicas."
+    },
+    "elapsed_seconds": 2.47
+  }
+]

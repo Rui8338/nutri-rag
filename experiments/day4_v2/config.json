@@ -1,0 +1,9 @@
+{
+  "version": "day4_v2",
+  "timestamp": "2026-05-13T12:30:19.444208",
+  "test_set": "experiments\\test_set_day4.json",
+  "model": "qwen2.5:3b-instruct",
+  "temperature": 0.0,
+  "rag_threshold": 0.5,
+  "rag_top_k": 3
+}
