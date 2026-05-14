@@ -1,0 +1,39 @@
+{
+  "total_queries": 15,
+  "routing_accuracy": 0.867,
+  "args_validity": 0.75,
+  "refusal_accuracy": 1.0,
+  "validator_save_rate": 1.0,
+  "by_category": {
+    "tdee_positive": {
+      "total": 3,
+      "routing_correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "lookup_positive": {
+      "total": 3,
+      "routing_correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "macros_positive": {
+      "total": 2,
+      "routing_correct": 2,
+      "accuracy": 1.0
+    },
+    "refusal": {
+      "total": 3,
+      "routing_correct": 3,
+      "accuracy": 1.0
+    },
+    "general": {
+      "total": 2,
+      "routing_correct": 2,
+      "accuracy": 1.0
+    },
+    "edge_case": {
+      "total": 2,
+      "routing_correct": 2,
+      "accuracy": 1.0
+    }
+  }
+}

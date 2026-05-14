@@ -1,0 +1,165 @@
+{
+  "version": "day3_v1",
+  "description": "Test set para eval do agent loop single-step. 15 queries em 5 categorias.",
+  "queries": [
+    {
+      "id": "A1",
+      "category": "tdee_positive",
+      "query": "Tenho 30 anos, peso 75kg, meço 1.78m, sou homem e faço exercício moderado 4 vezes por semana. Quantas calorias devo comer?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {"idade": 30, "peso_kg": 75, "altura_cm": 178, "sexo": "masculino", "fator_atividade": "moderado"},
+        "should_refuse": false
+      },
+      "tests": ["routing", "args_validity"]
+    },
+    {
+      "id": "A2",
+      "category": "tdee_positive",
+      "query": "Sou mulher de 28 anos, 60 quilos, 1.65m, vida sedentária. Qual é o meu TDEE?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {"idade": 28, "peso_kg": 60, "altura_cm": 165, "sexo": "feminino", "fator_atividade": "sedentario"},
+        "should_refuse": false
+      },
+      "tests": ["routing", "args_validity"]
+    },
+    {
+      "id": "A3",
+      "category": "tdee_positive",
+      "query": "Quantas calorias devo comer? Tenho 35 anos, sou homem, 80kg, 180cm, treino intenso.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {"idade": 35, "peso_kg": 80, "altura_cm": 180, "sexo": "masculino", "fator_atividade": "intenso"},
+        "should_refuse": false
+      },
+      "tests": ["routing", "args_validity"]
+    },
+    {
+      "id": "B1",
+      "category": "lookup_positive",
+      "query": "Quantas calorias tem a banana?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {"query_contains": "banana"},
+        "should_refuse": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "B2",
+      "category": "lookup_positive",
+      "query": "Qual é a informação nutricional do arroz cozido?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {"query_contains": "arroz"},
+        "should_refuse": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "B3",
+      "category": "lookup_positive",
+      "query": "Quanto de fibra tem o pão integral?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {"query_contains": "pão"},
+        "should_refuse": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "C1",
+      "category": "macros_positive",
+      "query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {"tdee": 2400, "peso_kg": 70, "objetivo": "manter", "perfil_atividade": "ativo"},
+        "should_refuse": false
+      },
+      "tests": ["routing", "args_validity"]
+    },
+    {
+      "id": "C2",
+      "category": "macros_positive",
+      "query": "Considerando um gasto calórico diário de 2800 kcal, peso 85kg, sou atleta e quero ganhar massa. Distribui-me os macros.",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {"tdee": 2800, "peso_kg": 85, "objetivo": "ganhar_massa", "perfil_atividade": "atleta"},
+        "should_refuse": false
+      },
+      "tests": ["routing", "args_validity"]
+    },
+    {
+      "id": "D1",
+      "category": "refusal",
+      "query": "Calcula o meu TDEE.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": ["routing", "refusal"]
+    },
+    {
+      "id": "D2",
+      "category": "refusal",
+      "query": "Tenho 70kg e faço exercício moderado, qual é o meu TDEE?",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": ["routing", "refusal"]
+    },
+    {
+      "id": "D3",
+      "category": "refusal",
+      "query": "Calcula a minha distribuição de macros.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": ["routing", "refusal"]
+    },
+    {
+      "id": "E1",
+      "category": "general",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "E2",
+      "category": "general",
+      "query": "O que é que sabes fazer?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": ["routing"]
+    },
+    {
+      "id": "E3",
+      "category": "edge_case",
+      "query": "Quantas calorias tem o pumpernickel?",
+      "expected": {
+        "tool": "lookup_food",
+        "tool_result_expected": "none_or_low_score",
+        "should_refuse": false
+      },
+      "tests": ["routing", "edge_case"]
+    },
+    {
+      "id": "E4",
+      "category": "edge_case",
+      "query": "Calcula calorias para 30 anos.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": ["routing", "refusal", "validator_save"]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "version": "day3_v1",
+  "timestamp": "2026-05-09T23:39:22.604490",
+  "test_set": "experiments\\test_set_day3.json",
+  "model": "qwen2.5:3b-instruct",
+  "temperature": 0.0
+}
