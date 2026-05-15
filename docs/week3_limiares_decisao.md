@@ -65,3 +65,54 @@ Estes limiares são consultados no Dia 5, depois de todos os evals
 correrem. Cada decisão é avaliada contra o critério escrito aqui, sem
 revisão. Se o resultado for marginal (ex: 89%), a decisão é a do critério
 (mantém pre-router), não a interpretação favorável.
+
+## Anexo — actualização pós-baseline 3B
+
+A baseline do 3B (3B + pre-router ON, N=5) revelou duas propriedades
+empíricas que ajustam a interpretação dos limiares acima. As alterações
+são feitas com a baseline 3B em mãos, **antes** de qualquer corrida do 7B.
+
+### 1. O 3B é estável neste test set
+
+Todas as queries deram 0/5 ou 5/5 em ambos os evals. Não houve queries
+intermédias.
+
+Consequências:
+- A premissa de "instabilidade do 3B" que motivou N=5 não se verificou
+  neste conjunto. N=5 mantém-se por precaução e por simetria com o 7B.
+- A comparação 3B-vs-7B será essencialmente sobre **capacidade**, não
+  estabilidade. Queries 0/5 → 5/5 são ganho inequívoco; 5/5 → 5/5 são
+  neutras; regressões 5/5 → <5/5 indicariam acoplamento escondido.
+
+### 2. Reformulação da condição 1b
+
+A condição original ("nenhuma query factual abaixo de 3/5") assumia
+queries intermédias. Com a baseline a mostrar binário 0/5 ou 5/5,
+"abaixo de 3/5" é equivalente a "0/5".
+
+Reformulação:
+- **Antes:** "Nenhuma query factual individual com taxa de routing
+  abaixo de 3/5."
+- **Depois:** "Nenhuma query factual a 0/5 com o 7B + pre-router off."
+
+Esta alteração é motivada pela baseline 3B (dados que já existem),
+não pelos resultados do 7B (que ainda não correram). É legítima.
+
+### 3. Falhas do 3B identificadas
+
+Falhas reais (candidatos directos para o 7B atacar):
+- A1, C1 — sensibilidade estrutural a queries "Tenho X anos, peso Y...".
+- B3, E3 — não-generalização: "fibra"/"pumpernickel" não reconhecidos
+  como alimentos.
+
+Falha estrutural do sistema (não do modelo):
+- E2 ("O que é que sabes fazer?") — pre-router falso-positivo
+  combinado com alucinação do rewriter ("não usar neste caso").
+  Anotada como dívida; ver `week3_day2_README.md`. Não é métrica de
+  comparação 3B-vs-7B.
+
+Correcção de calibração feita antes da baseline final:
+- E1 — test set tinha expectativa antiga (`tool: null`), do tempo em
+  que a tool RAG não existia. Actualizada para
+  `tool: "search_nutrition_principles"`, coerente com o sistema
+  desde o Dia 4 da Semana 2.

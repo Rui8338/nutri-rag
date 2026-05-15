@@ -125,7 +125,7 @@
       "category": "general",
       "query": "É verdade que comer hidratos à noite faz mal?",
       "expected": {
-        "tool": null,
+        "tool": "search_nutrition_principles",
         "should_refuse": false
       },
       "tests": ["routing"]
