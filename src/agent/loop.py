@@ -24,14 +24,7 @@ from src.agent.router import is_factual_question, rewrite_query_for_rag
 from src.tools.nutrition_calc import calculate_tdee, calculate_macros
 from src.tools.food_lookup import lookup_food
 from src.tools.rag_search import search_nutrition_principles
-
-
-# Modelo validado no Dia 1
-MODEL = "qwen2.5:3b-instruct"
-
-
-# Modelo validado no Dia 1
-MODEL = "qwen2.5:3b-instruct"
+from src.agent.config import AgentConfig, DEFAULT_CONFIG
 
 
 # Mapa de nome → função Python real
@@ -103,8 +96,31 @@ def _coerce_args(args: dict) -> dict:
     """Aplica _coerce_arg a todos os args do tool call."""
     return {k: _coerce_arg(v) for k, v in args.items()}
 
+def _run_rag_search(user_query: str, config: AgentConfig) -> tuple[Any, dict]:
+    """
+    Caminho único da tool RAG: reformula a query e procura nos chunks.
 
-def run_agent(user_query: str) -> AgentResponse:
+    Existe para a reformulação ser propriedade do CAMINHO DA TOOL RAG, não
+    do branch do pre-router. Antes do refactor, rewrite_query_for_rag só
+    corria dentro do pre-router — se o LLM escolhesse a tool RAG sozinho
+    (ou o pre-router estivesse desligado), a query chegava crua ao retrieval
+    e os scores afundavam abaixo do threshold (Dia 4: cru ~0.40, reformulado ~0.65).
+
+    Chamado pelos DOIS sítios que levam à tool RAG:
+    - branch do pre-router (queries factuais detectadas por keyword)
+    - branch do LLM (LLM escolheu search_nutrition_principles)
+
+    Returns:
+        (tool_result, rag_args) — tool_result são os chunks (ou None se nada
+        acima do threshold); rag_args é o dict de metadados para a AgentResponse.
+    """
+    rag_query = rewrite_query_for_rag(user_query, config.rewriter_model)
+    tool_result = search_nutrition_principles(rag_query)
+    rag_args = {"query": rag_query, "original_query": user_query}
+    return tool_result, rag_args
+
+
+def run_agent(user_query: str, config: AgentConfig | None = None) -> AgentResponse:
     """
     Executa um turno do agente para a query do utilizador.
 
@@ -114,6 +130,9 @@ def run_agent(user_query: str) -> AgentResponse:
     Returns:
         AgentResponse com texto final + metadados para debug/eval.
     """
+    if config is None:
+        config = DEFAULT_CONFIG
+
     # 1. Construir messages
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -122,12 +141,8 @@ def run_agent(user_query: str) -> AgentResponse:
     ]
 
     # 1.5 Pre-router: queries factuais → RAG directo
-    # (Qwen 2.5 3B não generaliza para 4ª tool — bypass do LLM router)
-    if is_factual_question(user_query):
-        rag_query = rewrite_query_for_rag(user_query)
-        tool_result = search_nutrition_principles(rag_query)
-
-        rag_args = {"query": rag_query, "original_query": user_query}
+    if config.pre_router_enabled and is_factual_question(user_query):
+        tool_result, rag_args = _run_rag_search(user_query, config)
 
         if tool_result is None:
             return AgentResponse(
@@ -151,7 +166,7 @@ def run_agent(user_query: str) -> AgentResponse:
 
         try:
             final_response = ollama.chat(
-                model=MODEL,
+                model=config.model,
                 messages=messages,
                 options={"temperature": 0.0},
             )
@@ -174,7 +189,7 @@ def run_agent(user_query: str) -> AgentResponse:
     # 2. Primeira chamada ao LLM
     try:
         response = ollama.chat(
-            model=MODEL,
+            model=config.model,
             messages=messages,
             tools=ALL_SCHEMAS,
             options={"temperature": 0.0},
@@ -232,6 +247,50 @@ def run_agent(user_query: str) -> AgentResponse:
             tool_args=raw_args,
             error=f"Unknown tool: {tool_name}",
         )
+    
+    if tool_name == "search_nutrition_principles":
+        tool_result, rag_args = _run_rag_search(user_query, config)
+
+        if tool_result is None:
+            return AgentResponse(
+                text=TOOL_REGISTRY[tool_name]["no_result_message"],
+                tool_used=tool_name,
+                tool_args=rag_args,
+                tool_result=None,
+            )
+
+        messages.append({
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [call],
+        })
+        messages.append({
+            "role": "tool",
+            "content": str(tool_result),
+            "name": tool_name,
+        })
+
+        try:
+            final_response = ollama.chat(
+                model=config.model,
+                messages=messages,
+                options={"temperature": 0.0},
+            )
+        except Exception as e:
+            return AgentResponse(
+                text=f"Tool executada mas erro a gerar resposta final: {e}",
+                tool_used=tool_name,
+                tool_args=rag_args,
+                tool_result=tool_result,
+                error=str(e),
+            )
+
+        return AgentResponse(
+            text=final_response["message"].get("content", ""),
+            tool_used=tool_name,
+            tool_args=rag_args,
+            tool_result=tool_result,
+        )
 
     # Conversão de tipos
     try:
@@ -287,7 +346,7 @@ def run_agent(user_query: str) -> AgentResponse:
 
     try:
         final_response = ollama.chat(
-            model=MODEL,
+            model=config.model,
             messages=messages,
             options={"temperature": 0.0},
         )

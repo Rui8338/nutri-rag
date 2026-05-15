@@ -188,10 +188,8 @@ SEARCH_NUTRITION_PRINCIPLES_SCHEMA = {
                 "query": {
                     "type": "string",
                     "description": (
-                        "Pergunta ou termo de pesquisa em português. "
-                        "Reformula para maximizar qualidade de retrieval "
-                        "(ex: 'devo comer hidratos?' → "
-                        "'hidratos de carbono recomendações nutricionais')."
+                        "Pergunta ou termo de pesquisa em português sobre "
+                        "princípios ou factos de nutrição."
                     ),
                 },
             },

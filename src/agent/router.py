@@ -93,8 +93,6 @@ def is_factual_question(query: str) -> bool:
 # Query rewriting para RAG via LLM
 # ═══════════════════════════════════════════════════════════════════════════
 
-REWRITER_MODEL = "qwen2.5:3b-instruct"
-
 # Prompt para o rewriter. Mantido curto e directo — o modelo 3B perde-se em
 # instruções longas. Few-shot de 3 exemplos ensina o padrão sem ambiguidade.
 REWRITER_SYSTEM = (
@@ -140,7 +138,7 @@ def _fallback_rewrite(user_query: str) -> str:
     return rewritten if len(rewritten.split()) >= 2 else user_query.strip()
 
 
-def rewrite_query_for_rag(user_query: str) -> str:
+def rewrite_query_for_rag(user_query: str, model: str) -> str:
     """
     Reformula query do utilizador para optimizar retrieval semântico.
 
@@ -165,7 +163,7 @@ def rewrite_query_for_rag(user_query: str) -> str:
 
     try:
         response = ollama.chat(
-            model=REWRITER_MODEL,
+            model=model,
             messages=messages,
             options={"temperature": 0.0},
         )
