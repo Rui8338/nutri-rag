@@ -1,0 +1,244 @@
+{
+  "global": {
+    "total_queries": 15,
+    "routing_accuracy": 0.667,
+    "args_validity": 1.0,
+    "refusal_accuracy": 1.0,
+    "validator_save_rate": 0.2,
+    "by_category": {
+      "tdee_positive": {
+        "routing_hits": 10,
+        "routing_total": 15,
+        "accuracy": 0.6666666666666666
+      },
+      "lookup_positive": {
+        "routing_hits": 10,
+        "routing_total": 15,
+        "accuracy": 0.6666666666666666
+      },
+      "macros_positive": {
+        "routing_hits": 5,
+        "routing_total": 10,
+        "accuracy": 0.5
+      },
+      "refusal": {
+        "routing_hits": 15,
+        "routing_total": 15,
+        "accuracy": 1.0
+      },
+      "general": {
+        "routing_hits": 5,
+        "routing_total": 10,
+        "accuracy": 0.5
+      },
+      "edge_case": {
+        "routing_hits": 5,
+        "routing_total": 10,
+        "accuracy": 0.5
+      }
+    }
+  },
+  "by_query": [
+    {
+      "id": "A1",
+      "category": "tdee_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 0,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 5
+    },
+    {
+      "id": "A2",
+      "category": "tdee_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": {
+        "hits": 5,
+        "total": 5
+      },
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "A3",
+      "category": "tdee_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": {
+        "hits": 5,
+        "total": 5
+      },
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "B1",
+      "category": "lookup_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "B2",
+      "category": "lookup_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "B3",
+      "category": "lookup_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 0,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "C1",
+      "category": "macros_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 0,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "C2",
+      "category": "macros_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": {
+        "hits": 5,
+        "total": 5
+      },
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "D1",
+      "category": "refusal",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": {
+        "hits": 5,
+        "total": 5
+      },
+      "validator_saves": 0
+    },
+    {
+      "id": "D2",
+      "category": "refusal",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": {
+        "hits": 5,
+        "total": 5
+      },
+      "validator_saves": 0
+    },
+    {
+      "id": "D3",
+      "category": "refusal",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": {
+        "hits": 5,
+        "total": 5
+      },
+      "validator_saves": 0
+    },
+    {
+      "id": "E1",
+      "category": "general",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "E2",
+      "category": "general",
+      "repeats": 5,
+      "routing": {
+        "hits": 0,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "E3",
+      "category": "edge_case",
+      "repeats": 5,
+      "routing": {
+        "hits": 0,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": null,
+      "validator_saves": 0
+    },
+    {
+      "id": "E4",
+      "category": "edge_case",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "args_validity": null,
+      "refusal": {
+        "hits": 5,
+        "total": 5
+      },
+      "validator_saves": 0
+    }
+  ]
+}

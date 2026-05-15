@@ -1,0 +1,156 @@
+{
+  "global": {
+    "total_queries": 8,
+    "routing_accuracy": 1.0,
+    "retrieval_relevance": 1.0,
+    "source_diversity": 0.5,
+    "no_match_handling": 0.0,
+    "by_category": {
+      "rag_positive": {
+        "routing_hits": 20,
+        "routing_total": 20,
+        "accuracy": 1.0
+      },
+      "cross_tool": {
+        "routing_hits": 10,
+        "routing_total": 10,
+        "accuracy": 1.0
+      },
+      "rag_no_match": {
+        "routing_hits": 5,
+        "routing_total": 5,
+        "accuracy": 1.0
+      },
+      "subjective": {
+        "routing_hits": 5,
+        "routing_total": 5,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "by_query": [
+    {
+      "id": "R1",
+      "category": "rag_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": {
+        "hits": 5,
+        "total": 5
+      },
+      "source_diversity": {
+        "hits": 0,
+        "total": 5
+      },
+      "no_match_handling": null
+    },
+    {
+      "id": "R2",
+      "category": "rag_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": {
+        "hits": 5,
+        "total": 5
+      },
+      "source_diversity": {
+        "hits": 5,
+        "total": 5
+      },
+      "no_match_handling": null
+    },
+    {
+      "id": "R3",
+      "category": "rag_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": {
+        "hits": 5,
+        "total": 5
+      },
+      "source_diversity": {
+        "hits": 0,
+        "total": 5
+      },
+      "no_match_handling": null
+    },
+    {
+      "id": "R4",
+      "category": "rag_positive",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": {
+        "hits": 5,
+        "total": 5
+      },
+      "source_diversity": {
+        "hits": 5,
+        "total": 5
+      },
+      "no_match_handling": null
+    },
+    {
+      "id": "X1",
+      "category": "cross_tool",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": null,
+      "source_diversity": null,
+      "no_match_handling": null
+    },
+    {
+      "id": "X2",
+      "category": "cross_tool",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": null,
+      "source_diversity": null,
+      "no_match_handling": null
+    },
+    {
+      "id": "N1",
+      "category": "rag_no_match",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": null,
+      "source_diversity": null,
+      "no_match_handling": {
+        "hits": 0,
+        "total": 5
+      }
+    },
+    {
+      "id": "S1",
+      "category": "subjective",
+      "repeats": 5,
+      "routing": {
+        "hits": 5,
+        "total": 5
+      },
+      "retrieval_relevance": null,
+      "source_diversity": null,
+      "no_match_handling": null
+    }
+  ]
+}

@@ -1,0 +1,2632 @@
+[
+  {
+    "query_def": {
+      "id": "A1",
+      "category": "tdee_positive",
+      "query": "Tenho 30 anos, peso 75kg, meço 1.78m, sou homem e faço exercício moderado 4 vezes por semana. Quantas calorias devo comer?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 30,
+          "peso_kg": 75,
+          "altura_cm": 178,
+          "sexo": "masculino",
+          "fator_atividade": "moderado"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": true,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "manter",
+        "perfil_atividade": "ativo",
+        "peso_kg": 75,
+        "tdee": 2400
+      },
+      "validation_failed": true,
+      "suspicious_args": [
+        "tdee"
+      ],
+      "response_text": "Para te ajudar, podes dizer-me a tua TDEE (calorias diárias)?",
+      "error": null
+    },
+    "elapsed_seconds": 5.58
+  },
+  {
+    "query_def": {
+      "id": "A1",
+      "category": "tdee_positive",
+      "query": "Tenho 30 anos, peso 75kg, meço 1.78m, sou homem e faço exercício moderado 4 vezes por semana. Quantas calorias devo comer?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 30,
+          "peso_kg": 75,
+          "altura_cm": 178,
+          "sexo": "masculino",
+          "fator_atividade": "moderado"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": true,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "manter",
+        "perfil_atividade": "ativo",
+        "peso_kg": 75,
+        "tdee": 2400
+      },
+      "validation_failed": true,
+      "suspicious_args": [
+        "tdee"
+      ],
+      "response_text": "Para te ajudar, podes dizer-me a tua TDEE (calorias diárias)?",
+      "error": null
+    },
+    "elapsed_seconds": 0.91
+  },
+  {
+    "query_def": {
+      "id": "A1",
+      "category": "tdee_positive",
+      "query": "Tenho 30 anos, peso 75kg, meço 1.78m, sou homem e faço exercício moderado 4 vezes por semana. Quantas calorias devo comer?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 30,
+          "peso_kg": 75,
+          "altura_cm": 178,
+          "sexo": "masculino",
+          "fator_atividade": "moderado"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": true,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "manter",
+        "perfil_atividade": "ativo",
+        "peso_kg": 75,
+        "tdee": 2400
+      },
+      "validation_failed": true,
+      "suspicious_args": [
+        "tdee"
+      ],
+      "response_text": "Para te ajudar, podes dizer-me a tua TDEE (calorias diárias)?",
+      "error": null
+    },
+    "elapsed_seconds": 0.97
+  },
+  {
+    "query_def": {
+      "id": "A1",
+      "category": "tdee_positive",
+      "query": "Tenho 30 anos, peso 75kg, meço 1.78m, sou homem e faço exercício moderado 4 vezes por semana. Quantas calorias devo comer?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 30,
+          "peso_kg": 75,
+          "altura_cm": 178,
+          "sexo": "masculino",
+          "fator_atividade": "moderado"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": true,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "manter",
+        "perfil_atividade": "ativo",
+        "peso_kg": 75,
+        "tdee": 2400
+      },
+      "validation_failed": true,
+      "suspicious_args": [
+        "tdee"
+      ],
+      "response_text": "Para te ajudar, podes dizer-me a tua TDEE (calorias diárias)?",
+      "error": null
+    },
+    "elapsed_seconds": 1.01
+  },
+  {
+    "query_def": {
+      "id": "A1",
+      "category": "tdee_positive",
+      "query": "Tenho 30 anos, peso 75kg, meço 1.78m, sou homem e faço exercício moderado 4 vezes por semana. Quantas calorias devo comer?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 30,
+          "peso_kg": 75,
+          "altura_cm": 178,
+          "sexo": "masculino",
+          "fator_atividade": "moderado"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": true,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "manter",
+        "perfil_atividade": "ativo",
+        "peso_kg": 75,
+        "tdee": 2400
+      },
+      "validation_failed": true,
+      "suspicious_args": [
+        "tdee"
+      ],
+      "response_text": "Para te ajudar, podes dizer-me a tua TDEE (calorias diárias)?",
+      "error": null
+    },
+    "elapsed_seconds": 0.92
+  },
+  {
+    "query_def": {
+      "id": "A2",
+      "category": "tdee_positive",
+      "query": "Sou mulher de 28 anos, 60 quilos, 1.65m, vida sedentária. Qual é o meu TDEE?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 28,
+          "peso_kg": 60,
+          "altura_cm": 165,
+          "sexo": "feminino",
+          "fator_atividade": "sedentario"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 165,
+        "fator_atividade": "sedentario",
+        "idade": 28,
+        "peso_kg": 60,
+        "sexo": "feminino"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos dados que forneceste, o teu gasto calórico diário (TDEE) é de aproximadamente 1596 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 2.31
+  },
+  {
+    "query_def": {
+      "id": "A2",
+      "category": "tdee_positive",
+      "query": "Sou mulher de 28 anos, 60 quilos, 1.65m, vida sedentária. Qual é o meu TDEE?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 28,
+          "peso_kg": 60,
+          "altura_cm": 165,
+          "sexo": "feminino",
+          "fator_atividade": "sedentario"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 165,
+        "fator_atividade": "sedentario",
+        "idade": 28,
+        "peso_kg": 60,
+        "sexo": "feminino"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos dados que forneceste, o teu gasto calórico diário (TDEE) é de aproximadamente 1596 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.31
+  },
+  {
+    "query_def": {
+      "id": "A2",
+      "category": "tdee_positive",
+      "query": "Sou mulher de 28 anos, 60 quilos, 1.65m, vida sedentária. Qual é o meu TDEE?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 28,
+          "peso_kg": 60,
+          "altura_cm": 165,
+          "sexo": "feminino",
+          "fator_atividade": "sedentario"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 165,
+        "fator_atividade": "sedentario",
+        "idade": 28,
+        "peso_kg": 60,
+        "sexo": "feminino"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos dados que forneceste, o teu gasto calórico diário (TDEE) é de aproximadamente 1596 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.36
+  },
+  {
+    "query_def": {
+      "id": "A2",
+      "category": "tdee_positive",
+      "query": "Sou mulher de 28 anos, 60 quilos, 1.65m, vida sedentária. Qual é o meu TDEE?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 28,
+          "peso_kg": 60,
+          "altura_cm": 165,
+          "sexo": "feminino",
+          "fator_atividade": "sedentario"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "idade": 28,
+        "peso_kg": 60,
+        "sexo": "feminino",
+        "altura_cm": 165,
+        "fator_atividade": "sedentario"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos dados que forneceste, o teu gasto calórico diário (TDEE) é de aproximadamente 1596 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.31
+  },
+  {
+    "query_def": {
+      "id": "A2",
+      "category": "tdee_positive",
+      "query": "Sou mulher de 28 anos, 60 quilos, 1.65m, vida sedentária. Qual é o meu TDEE?",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 28,
+          "peso_kg": 60,
+          "altura_cm": 165,
+          "sexo": "feminino",
+          "fator_atividade": "sedentario"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 165,
+        "fator_atividade": "sedentario",
+        "idade": 28,
+        "peso_kg": 60,
+        "sexo": "feminino"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos dados que forneceste, o teu gasto calórico diário (TDEE) é de aproximadamente 1596 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.4
+  },
+  {
+    "query_def": {
+      "id": "A3",
+      "category": "tdee_positive",
+      "query": "Quantas calorias devo comer? Tenho 35 anos, sou homem, 80kg, 180cm, treino intenso.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 35,
+          "peso_kg": 80,
+          "altura_cm": 180,
+          "sexo": "masculino",
+          "fator_atividade": "intenso"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 180,
+        "fator_atividade": "intenso",
+        "idade": 35,
+        "peso_kg": 80,
+        "sexo": "masculino"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base no seu perfil, o teu gasto calórico diário (TDEE) é de aproximadamente 3027 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.76
+  },
+  {
+    "query_def": {
+      "id": "A3",
+      "category": "tdee_positive",
+      "query": "Quantas calorias devo comer? Tenho 35 anos, sou homem, 80kg, 180cm, treino intenso.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 35,
+          "peso_kg": 80,
+          "altura_cm": 180,
+          "sexo": "masculino",
+          "fator_atividade": "intenso"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "sexo": "masculino",
+        "altura_cm": 180,
+        "fator_atividade": "intenso",
+        "idade": 35,
+        "peso_kg": 80
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base no seu perfil, o teu gasto calórico diário (TDEE) é de aproximadamente 3027 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.42
+  },
+  {
+    "query_def": {
+      "id": "A3",
+      "category": "tdee_positive",
+      "query": "Quantas calorias devo comer? Tenho 35 anos, sou homem, 80kg, 180cm, treino intenso.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 35,
+          "peso_kg": 80,
+          "altura_cm": 180,
+          "sexo": "masculino",
+          "fator_atividade": "intenso"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "fator_atividade": "intenso",
+        "idade": 35,
+        "peso_kg": 80,
+        "sexo": "masculino",
+        "altura_cm": 180
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base no seu perfil, o teu gasto calórico diário (TDEE) é de aproximadamente 3027 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.28
+  },
+  {
+    "query_def": {
+      "id": "A3",
+      "category": "tdee_positive",
+      "query": "Quantas calorias devo comer? Tenho 35 anos, sou homem, 80kg, 180cm, treino intenso.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 35,
+          "peso_kg": 80,
+          "altura_cm": 180,
+          "sexo": "masculino",
+          "fator_atividade": "intenso"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "peso_kg": 80,
+        "sexo": "masculino",
+        "altura_cm": 180,
+        "fator_atividade": "intenso",
+        "idade": 35
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base no seu perfil, o teu gasto calórico diário (TDEE) é de aproximadamente 3027 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.37
+  },
+  {
+    "query_def": {
+      "id": "A3",
+      "category": "tdee_positive",
+      "query": "Quantas calorias devo comer? Tenho 35 anos, sou homem, 80kg, 180cm, treino intenso.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "args_must_match": {
+          "idade": 35,
+          "peso_kg": 80,
+          "altura_cm": 180,
+          "sexo": "masculino",
+          "fator_atividade": "intenso"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 180,
+        "fator_atividade": "intenso",
+        "idade": 35,
+        "peso_kg": 80,
+        "sexo": "masculino"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base no seu perfil, o teu gasto calórico diário (TDEE) é de aproximadamente 3027 kcal.",
+      "error": null
+    },
+    "elapsed_seconds": 3.3
+  },
+  {
+    "query_def": {
+      "id": "B1",
+      "category": "lookup_positive",
+      "query": "Quantas calorias tem a banana?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "banana"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "banana"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Uma banana de tamanho médio contém aproximadamente **97 calorias** e fornece **1.4g de proteína**, **22.1g de hidratos de carbono** (incluindo **1.1g de fibra**), e **0g de gorduras**.",
+      "error": null
+    },
+    "elapsed_seconds": 3.38
+  },
+  {
+    "query_def": {
+      "id": "B1",
+      "category": "lookup_positive",
+      "query": "Quantas calorias tem a banana?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "banana"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "banana"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Uma banana de tamanho médio contém aproximadamente **97 calorias** e fornece **1.4g de proteína**, **22.1g de hidratos de carbono** (incluindo **1.1g de fibra**), e **0g de gorduras**.",
+      "error": null
+    },
+    "elapsed_seconds": 3.53
+  },
+  {
+    "query_def": {
+      "id": "B1",
+      "category": "lookup_positive",
+      "query": "Quantas calorias tem a banana?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "banana"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "banana"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Uma banana de tamanho médio contém aproximadamente **97 calorias** e fornece **1.4g de proteína**, **22.1g de hidratos de carbono** (incluindo **1.1g de fibra**), e **0g de gorduras**.",
+      "error": null
+    },
+    "elapsed_seconds": 3.42
+  },
+  {
+    "query_def": {
+      "id": "B1",
+      "category": "lookup_positive",
+      "query": "Quantas calorias tem a banana?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "banana"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "banana"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Uma banana de tamanho médio contém aproximadamente **97 calorias** e fornece **1.4g de proteína**, **22.1g de hidratos de carbono** (incluindo **1.1g de fibra**), e **0g de gorduras**.",
+      "error": null
+    },
+    "elapsed_seconds": 3.76
+  },
+  {
+    "query_def": {
+      "id": "B1",
+      "category": "lookup_positive",
+      "query": "Quantas calorias tem a banana?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "banana"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "banana"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Uma banana de tamanho médio contém aproximadamente **97 calorias** e fornece **1.4g de proteína**, **22.1g de hidratos de carbono** (incluindo **1.1g de fibra**), e **0g de gorduras**.",
+      "error": null
+    },
+    "elapsed_seconds": 3.79
+  },
+  {
+    "query_def": {
+      "id": "B2",
+      "category": "lookup_positive",
+      "query": "Qual é a informação nutricional do arroz cozido?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "arroz"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "arroz cozido"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "O arroz cozido contém as seguintes informações nutricionais para uma porção de 100g:\n\n- Calorias: 125 kcal\n- Proteínas: 2,5 g\n- Hidratos de Carbono: 28 g\n- Gorduras: 0,2 g\n- Fibra: 0,8 g",
+      "error": null
+    },
+    "elapsed_seconds": 3.81
+  },
+  {
+    "query_def": {
+      "id": "B2",
+      "category": "lookup_positive",
+      "query": "Qual é a informação nutricional do arroz cozido?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "arroz"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "arroz cozido"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "O arroz cozido contém as seguintes informações nutricionais para uma porção de 100g:\n\n- Calorias: 125 kcal\n- Proteínas: 2,5 g\n- Hidratos de Carbono: 28 g\n- Gorduras: 0,2 g\n- Fibra: 0,8 g",
+      "error": null
+    },
+    "elapsed_seconds": 3.67
+  },
+  {
+    "query_def": {
+      "id": "B2",
+      "category": "lookup_positive",
+      "query": "Qual é a informação nutricional do arroz cozido?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "arroz"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "arroz cozido"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "O arroz cozido contém as seguintes informações nutricionais para uma porção de 100g:\n\n- Calorias: 125 kcal\n- Proteínas: 2,5 g\n- Hidratos de Carbono: 28 g\n- Gorduras: 0,2 g\n- Fibra: 0,8 g",
+      "error": null
+    },
+    "elapsed_seconds": 4.0
+  },
+  {
+    "query_def": {
+      "id": "B2",
+      "category": "lookup_positive",
+      "query": "Qual é a informação nutricional do arroz cozido?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "arroz"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "arroz cozido"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "O arroz cozido contém as seguintes informações nutricionais para uma porção de 100g:\n\n- Calorias: 125 kcal\n- Proteínas: 2,5 g\n- Hidratos de Carbono: 28 g\n- Gorduras: 0,2 g\n- Fibra: 0,8 g",
+      "error": null
+    },
+    "elapsed_seconds": 3.7
+  },
+  {
+    "query_def": {
+      "id": "B2",
+      "category": "lookup_positive",
+      "query": "Qual é a informação nutricional do arroz cozido?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "arroz"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "arroz cozido"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "O arroz cozido contém as seguintes informações nutricionais para uma porção de 100g:\n\n- Calorias: 125 kcal\n- Proteínas: 2,5 g\n- Hidratos de Carbono: 28 g\n- Gorduras: 0,2 g\n- Fibra: 0,8 g",
+      "error": null
+    },
+    "elapsed_seconds": 3.73
+  },
+  {
+    "query_def": {
+      "id": "B3",
+      "category": "lookup_positive",
+      "query": "Quanto de fibra tem o pão integral?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "pão"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, precisamos do nome exato do alimento. Podes dizer-me qual é a versão normalizada do pão integral que queres saber mais sobre? Por exemplo, 'pão integral cozido'.",
+      "error": null
+    },
+    "elapsed_seconds": 2.17
+  },
+  {
+    "query_def": {
+      "id": "B3",
+      "category": "lookup_positive",
+      "query": "Quanto de fibra tem o pão integral?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "pão"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, precisamos do nome específico do alimento. Podes dizer qual é a versão normalizada do pão integral que queres saber mais sobre (por exemplo, 'pão integral cozido')?",
+      "error": null
+    },
+    "elapsed_seconds": 1.05
+  },
+  {
+    "query_def": {
+      "id": "B3",
+      "category": "lookup_positive",
+      "query": "Quanto de fibra tem o pão integral?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "pão"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, precisamos do nome específico do alimento. Podes dizer qual é a versão normalizada do pão integral que queres saber mais sobre (por exemplo, 'pão integral cozido')?",
+      "error": null
+    },
+    "elapsed_seconds": 1.12
+  },
+  {
+    "query_def": {
+      "id": "B3",
+      "category": "lookup_positive",
+      "query": "Quanto de fibra tem o pão integral?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "pão"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, precisamos do nome específico do alimento. Podes dizer qual é a versão normalizada do pão integral que queres saber mais sobre (por exemplo, 'pão integral cozido')?",
+      "error": null
+    },
+    "elapsed_seconds": 1.06
+  },
+  {
+    "query_def": {
+      "id": "B3",
+      "category": "lookup_positive",
+      "query": "Quanto de fibra tem o pão integral?",
+      "expected": {
+        "tool": "lookup_food",
+        "args_must_match": {
+          "query_contains": "pão"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, precisamos do nome específico do alimento. Podes dizer qual é a versão normalizada do pão integral que queres saber mais sobre (por exemplo, 'pão integral cozido')?",
+      "error": null
+    },
+    "elapsed_seconds": 1.12
+  },
+  {
+    "query_def": {
+      "id": "C1",
+      "category": "macros_positive",
+      "query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2400,
+          "peso_kg": 70,
+          "objetivo": "manter",
+          "perfil_atividade": "ativo"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "tdeee peso proteina necessária calorias diarias atividade fisica",
+        "original_query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com as pesquisas citadas, a ingestão de proteína no seu nível atual (2400 kcal) parece estar dentro dos limites recomendados para manter o peso. Para um indivíduo ativo e com um peso de 70 k",
+      "error": null
+    },
+    "elapsed_seconds": 6.52
+  },
+  {
+    "query_def": {
+      "id": "C1",
+      "category": "macros_positive",
+      "query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2400,
+          "peso_kg": 70,
+          "objetivo": "manter",
+          "perfil_atividade": "ativo"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "tdeee peso proteina necessária calorias diarias atividade fisica",
+        "original_query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com as pesquisas citadas, a ingestão de proteína no seu nível atual (2400 kcal) parece estar dentro dos limites recomendados para manter o peso. Para um indivíduo ativo e com um peso de 70 k",
+      "error": null
+    },
+    "elapsed_seconds": 6.0
+  },
+  {
+    "query_def": {
+      "id": "C1",
+      "category": "macros_positive",
+      "query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2400,
+          "peso_kg": 70,
+          "objetivo": "manter",
+          "perfil_atividade": "ativo"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "tdeee peso proteina necessária calorias diarias atividade fisica",
+        "original_query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com as pesquisas citadas, a ingestão de proteína no seu nível atual (2400 kcal) parece estar dentro dos limites recomendados para manter o peso. Para um indivíduo ativo e com um peso de 70 k",
+      "error": null
+    },
+    "elapsed_seconds": 6.11
+  },
+  {
+    "query_def": {
+      "id": "C1",
+      "category": "macros_positive",
+      "query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2400,
+          "peso_kg": 70,
+          "objetivo": "manter",
+          "perfil_atividade": "ativo"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "tdeee peso proteina necessária calorias diarias atividade fisica",
+        "original_query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com as pesquisas citadas, a ingestão de proteína no seu nível atual (2400 kcal) parece estar dentro dos limites recomendados para manter o peso. Para um indivíduo ativo e com um peso de 70 k",
+      "error": null
+    },
+    "elapsed_seconds": 5.9
+  },
+  {
+    "query_def": {
+      "id": "C1",
+      "category": "macros_positive",
+      "query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2400,
+          "peso_kg": 70,
+          "objetivo": "manter",
+          "perfil_atividade": "ativo"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "tdeee peso proteina necessária calorias diarias atividade fisica",
+        "original_query": "O meu TDEE é 2400 kcal, peso 70kg, sou ativo e quero manter o peso. Quanta proteína devo comer por dia?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com as pesquisas citadas, a ingestão de proteína no seu nível atual (2400 kcal) parece estar dentro dos limites recomendados para manter o peso. Para um indivíduo ativo e com um peso de 70 k",
+      "error": null
+    },
+    "elapsed_seconds": 6.17
+  },
+  {
+    "query_def": {
+      "id": "C2",
+      "category": "macros_positive",
+      "query": "Considerando um gasto calórico diário de 2800 kcal, peso 85kg, sou atleta e quero ganhar massa. Distribui-me os macros.",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2800,
+          "peso_kg": 85,
+          "objetivo": "ganhar_massa",
+          "perfil_atividade": "atleta"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "tdee": 2800,
+        "objetivo": "ganhar_massa",
+        "perfil_atividade": "atleta",
+        "peso_kg": 85
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos teus dados (idade, peso, altura e nível de atividade), para um gasto calórico diário de 2800 kcal e o objetivo de ganhar massa muscular, a distribuição dos macros deve ser:\n\n- Proteína: 1",
+      "error": null
+    },
+    "elapsed_seconds": 5.13
+  },
+  {
+    "query_def": {
+      "id": "C2",
+      "category": "macros_positive",
+      "query": "Considerando um gasto calórico diário de 2800 kcal, peso 85kg, sou atleta e quero ganhar massa. Distribui-me os macros.",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2800,
+          "peso_kg": 85,
+          "objetivo": "ganhar_massa",
+          "perfil_atividade": "atleta"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "perfil_atividade": "atleta",
+        "peso_kg": 85,
+        "tdee": 2800,
+        "objetivo": "ganhar_massa"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos teus dados (idade, peso, altura e nível de atividade), para um gasto calórico diário de 2800 kcal e o objetivo de ganhar massa muscular, a distribuição dos macros deve ser:\n\n- Proteína: 1",
+      "error": null
+    },
+    "elapsed_seconds": 4.8
+  },
+  {
+    "query_def": {
+      "id": "C2",
+      "category": "macros_positive",
+      "query": "Considerando um gasto calórico diário de 2800 kcal, peso 85kg, sou atleta e quero ganhar massa. Distribui-me os macros.",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2800,
+          "peso_kg": 85,
+          "objetivo": "ganhar_massa",
+          "perfil_atividade": "atleta"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "ganhar_massa",
+        "perfil_atividade": "atleta",
+        "peso_kg": 85,
+        "tdee": 2800
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos teus dados (idade, peso, altura e nível de atividade), para um gasto calórico diário de 2800 kcal e o objetivo de ganhar massa muscular, a distribuição dos macros deve ser:\n\n- Proteína: 1",
+      "error": null
+    },
+    "elapsed_seconds": 4.8
+  },
+  {
+    "query_def": {
+      "id": "C2",
+      "category": "macros_positive",
+      "query": "Considerando um gasto calórico diário de 2800 kcal, peso 85kg, sou atleta e quero ganhar massa. Distribui-me os macros.",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2800,
+          "peso_kg": 85,
+          "objetivo": "ganhar_massa",
+          "perfil_atividade": "atleta"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "ganhar_massa",
+        "perfil_atividade": "atleta",
+        "peso_kg": 85,
+        "tdee": 2800
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos teus dados (idade, peso, altura e nível de atividade), para um gasto calórico diário de 2800 kcal e o objetivo de ganhar massa muscular, a distribuição dos macros deve ser:\n\n- Proteína: 1",
+      "error": null
+    },
+    "elapsed_seconds": 4.75
+  },
+  {
+    "query_def": {
+      "id": "C2",
+      "category": "macros_positive",
+      "query": "Considerando um gasto calórico diário de 2800 kcal, peso 85kg, sou atleta e quero ganhar massa. Distribui-me os macros.",
+      "expected": {
+        "tool": "calculate_macros",
+        "args_must_match": {
+          "tdee": 2800,
+          "peso_kg": 85,
+          "objetivo": "ganhar_massa",
+          "perfil_atividade": "atleta"
+        },
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "args_validity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": true,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "calculate_macros",
+      "actual_tool": "calculate_macros",
+      "tool_args": {
+        "objetivo": "ganhar_massa",
+        "perfil_atividade": "atleta",
+        "peso_kg": 85,
+        "tdee": 2800
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Com base nos teus dados (idade, peso, altura e nível de atividade), para um gasto calórico diário de 2800 kcal e o objetivo de ganhar massa muscular, a distribuição dos macros deve ser:\n\n- Proteína: 1",
+      "error": null
+    },
+    "elapsed_seconds": 4.9
+  },
+  {
+    "query_def": {
+      "id": "D1",
+      "category": "refusal",
+      "query": "Calcula o meu TDEE.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso fornecer a idade, peso, altura e sexo. Além disso, também preciso do nível de atividade física (sedentário, ativo, atleta). Podes fornecer esses dados?",
+      "error": null
+    },
+    "elapsed_seconds": 2.19
+  },
+  {
+    "query_def": {
+      "id": "D1",
+      "category": "refusal",
+      "query": "Calcula o meu TDEE.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso fornecer a idade, peso, altura e sexo. Além disso, também preciso do nível de atividade física (sedentário, ativo, atleta). Podes fornecer esses dados?",
+      "error": null
+    },
+    "elapsed_seconds": 1.11
+  },
+  {
+    "query_def": {
+      "id": "D1",
+      "category": "refusal",
+      "query": "Calcula o meu TDEE.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso fornecer a idade, peso, altura e sexo. Além disso, também preciso do nível de atividade física (sedentário, ativo, atleta). Podes fornecer esses dados?",
+      "error": null
+    },
+    "elapsed_seconds": 1.17
+  },
+  {
+    "query_def": {
+      "id": "D1",
+      "category": "refusal",
+      "query": "Calcula o meu TDEE.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso fornecer a idade, peso, altura e sexo. Além disso, também preciso do nível de atividade física (sedentário, ativo, atleta). Podes fornecer esses dados?",
+      "error": null
+    },
+    "elapsed_seconds": 1.42
+  },
+  {
+    "query_def": {
+      "id": "D1",
+      "category": "refusal",
+      "query": "Calcula o meu TDEE.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso fornecer a idade, peso, altura e sexo. Além disso, também preciso do nível de atividade física (sedentário, ativo, atleta). Podes fornecer esses dados?",
+      "error": null
+    },
+    "elapsed_seconds": 1.36
+  },
+  {
+    "query_def": {
+      "id": "D2",
+      "category": "refusal",
+      "query": "Tenho 70kg e faço exercício moderado, qual é o meu TDEE?",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso a idade. Podes fornecer-me essa informação?",
+      "error": null
+    },
+    "elapsed_seconds": 0.64
+  },
+  {
+    "query_def": {
+      "id": "D2",
+      "category": "refusal",
+      "query": "Tenho 70kg e faço exercício moderado, qual é o meu TDEE?",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso a idade. Podes fornecer-me essa informação?",
+      "error": null
+    },
+    "elapsed_seconds": 0.58
+  },
+  {
+    "query_def": {
+      "id": "D2",
+      "category": "refusal",
+      "query": "Tenho 70kg e faço exercício moderado, qual é o meu TDEE?",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso a idade. Podes fornecer-me essa informação?",
+      "error": null
+    },
+    "elapsed_seconds": 0.66
+  },
+  {
+    "query_def": {
+      "id": "D2",
+      "category": "refusal",
+      "query": "Tenho 70kg e faço exercício moderado, qual é o meu TDEE?",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso a idade. Podes fornecer-me essa informação?",
+      "error": null
+    },
+    "elapsed_seconds": 0.71
+  },
+  {
+    "query_def": {
+      "id": "D2",
+      "category": "refusal",
+      "query": "Tenho 70kg e faço exercício moderado, qual é o meu TDEE?",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular o teu TDEE preciso a idade. Podes fornecer-me essa informação?",
+      "error": null
+    },
+    "elapsed_seconds": 0.6
+  },
+  {
+    "query_def": {
+      "id": "D3",
+      "category": "refusal",
+      "query": "Calcula a minha distribuição de macros.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular a tua distribuição diária de macronutrientes (proteína, hidratos e gorduras), preciso do teu TDEE que já calculaste ou forneceres os dados necessários para o calcular.\n\nSe ainda não calc",
+      "error": null
+    },
+    "elapsed_seconds": 1.89
+  },
+  {
+    "query_def": {
+      "id": "D3",
+      "category": "refusal",
+      "query": "Calcula a minha distribuição de macros.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular a tua distribuição diária de macronutrientes (proteína, hidratos e gorduras), preciso do teu TDEE que já calculaste ou forneceres os dados necessários para o calcular.\n\nSe ainda não calc",
+      "error": null
+    },
+    "elapsed_seconds": 2.08
+  },
+  {
+    "query_def": {
+      "id": "D3",
+      "category": "refusal",
+      "query": "Calcula a minha distribuição de macros.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular a tua distribuição diária de macronutrientes (proteína, hidratos e gorduras), preciso do teu TDEE que já calculaste ou forneceres os dados necessários para o calcular.\n\nSe ainda não calc",
+      "error": null
+    },
+    "elapsed_seconds": 2.17
+  },
+  {
+    "query_def": {
+      "id": "D3",
+      "category": "refusal",
+      "query": "Calcula a minha distribuição de macros.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular a tua distribuição diária de macronutrientes (proteína, hidratos e gorduras), preciso do teu TDEE que já calculaste ou forneceres os dados necessários para o calcular.\n\nSe ainda não calc",
+      "error": null
+    },
+    "elapsed_seconds": 2.31
+  },
+  {
+    "query_def": {
+      "id": "D3",
+      "category": "refusal",
+      "query": "Calcula a minha distribuição de macros.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular a tua distribuição diária de macronutrientes (proteína, hidratos e gorduras), preciso do teu TDEE que já calculaste ou forneceres os dados necessários para o calcular.\n\nSe ainda não calc",
+      "error": null
+    },
+    "elapsed_seconds": 2.31
+  },
+  {
+    "query_def": {
+      "id": "E1",
+      "category": "general",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:",
+      "error": null
+    },
+    "elapsed_seconds": 5.4
+  },
+  {
+    "query_def": {
+      "id": "E1",
+      "category": "general",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:",
+      "error": null
+    },
+    "elapsed_seconds": 5.26
+  },
+  {
+    "query_def": {
+      "id": "E1",
+      "category": "general",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:",
+      "error": null
+    },
+    "elapsed_seconds": 5.48
+  },
+  {
+    "query_def": {
+      "id": "E1",
+      "category": "general",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:",
+      "error": null
+    },
+    "elapsed_seconds": 5.13
+  },
+  {
+    "query_def": {
+      "id": "E1",
+      "category": "general",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:",
+      "error": null
+    },
+    "elapsed_seconds": 5.17
+  },
+  {
+    "query_def": {
+      "id": "E2",
+      "category": "general",
+      "query": "O que é que sabes fazer?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "não usar neste caso",
+        "original_query": "O que é que sabes fazer?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Não encontrei conteúdo relevante na base de conhecimento sobre essa pergunta. Posso ajudar-te com cálculos de TDEE, distribuição de macros, ou informação nutricional de alimentos específicos.",
+      "error": null
+    },
+    "elapsed_seconds": 0.44
+  },
+  {
+    "query_def": {
+      "id": "E2",
+      "category": "general",
+      "query": "O que é que sabes fazer?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "não usar neste caso",
+        "original_query": "O que é que sabes fazer?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Não encontrei conteúdo relevante na base de conhecimento sobre essa pergunta. Posso ajudar-te com cálculos de TDEE, distribuição de macros, ou informação nutricional de alimentos específicos.",
+      "error": null
+    },
+    "elapsed_seconds": 0.36
+  },
+  {
+    "query_def": {
+      "id": "E2",
+      "category": "general",
+      "query": "O que é que sabes fazer?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "não usar neste caso",
+        "original_query": "O que é que sabes fazer?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Não encontrei conteúdo relevante na base de conhecimento sobre essa pergunta. Posso ajudar-te com cálculos de TDEE, distribuição de macros, ou informação nutricional de alimentos específicos.",
+      "error": null
+    },
+    "elapsed_seconds": 0.38
+  },
+  {
+    "query_def": {
+      "id": "E2",
+      "category": "general",
+      "query": "O que é que sabes fazer?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "não usar neste caso",
+        "original_query": "O que é que sabes fazer?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Não encontrei conteúdo relevante na base de conhecimento sobre essa pergunta. Posso ajudar-te com cálculos de TDEE, distribuição de macros, ou informação nutricional de alimentos específicos.",
+      "error": null
+    },
+    "elapsed_seconds": 0.43
+  },
+  {
+    "query_def": {
+      "id": "E2",
+      "category": "general",
+      "query": "O que é que sabes fazer?",
+      "expected": {
+        "tool": null,
+        "should_refuse": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "não usar neste caso",
+        "original_query": "O que é que sabes fazer?"
+      },
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Não encontrei conteúdo relevante na base de conhecimento sobre essa pergunta. Posso ajudar-te com cálculos de TDEE, distribuição de macros, ou informação nutricional de alimentos específicos.",
+      "error": null
+    },
+    "elapsed_seconds": 0.4
+  },
+  {
+    "query_def": {
+      "id": "E3",
+      "category": "edge_case",
+      "query": "Quantas calorias tem o pumpernickel?",
+      "expected": {
+        "tool": "lookup_food",
+        "tool_result_expected": "none_or_low_score",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "edge_case"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, preciso do nome exato do alimento. Podes dizer-me qual é a versão normalizada do pumpernickel que pretendes saber? Por exemplo, 'pumpernickel integral', 'pumpernickel sem f",
+      "error": null
+    },
+    "elapsed_seconds": 2.86
+  },
+  {
+    "query_def": {
+      "id": "E3",
+      "category": "edge_case",
+      "query": "Quantas calorias tem o pumpernickel?",
+      "expected": {
+        "tool": "lookup_food",
+        "tool_result_expected": "none_or_low_score",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "edge_case"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, preciso do nome exato do alimento. Podes dizer-me qual é a versão normalizada do pumpernickel que pretendes saber? Por exemplo, 'pumpernickel integral', 'pumpernickel sem f",
+      "error": null
+    },
+    "elapsed_seconds": 1.37
+  },
+  {
+    "query_def": {
+      "id": "E3",
+      "category": "edge_case",
+      "query": "Quantas calorias tem o pumpernickel?",
+      "expected": {
+        "tool": "lookup_food",
+        "tool_result_expected": "none_or_low_score",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "edge_case"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, preciso do nome exato do alimento. Podes dizer-me qual é a versão normalizada do pumpernickel que pretendes saber? Por exemplo, 'pumpernickel integral', 'pumpernickel sem f",
+      "error": null
+    },
+    "elapsed_seconds": 1.37
+  },
+  {
+    "query_def": {
+      "id": "E3",
+      "category": "edge_case",
+      "query": "Quantas calorias tem o pumpernickel?",
+      "expected": {
+        "tool": "lookup_food",
+        "tool_result_expected": "none_or_low_score",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "edge_case"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, preciso do nome exato do alimento. Podes dizer-me qual é a versão normalizada do pumpernickel que pretendes saber? Por exemplo, 'pumpernickel integral', 'pumpernickel sem f",
+      "error": null
+    },
+    "elapsed_seconds": 1.37
+  },
+  {
+    "query_def": {
+      "id": "E3",
+      "category": "edge_case",
+      "query": "Quantas calorias tem o pumpernickel?",
+      "expected": {
+        "tool": "lookup_food",
+        "tool_result_expected": "none_or_low_score",
+        "should_refuse": false
+      },
+      "tests": [
+        "routing",
+        "edge_case"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": false,
+      "args_valid": null,
+      "refused_correctly": null,
+      "validator_saved": false,
+      "expected_tool": "lookup_food",
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para obter essa informação, preciso do nome exato do alimento. Podes dizer-me qual é a versão normalizada do pumpernickel que pretendes saber? Por exemplo, 'pumpernickel integral', 'pumpernickel sem f",
+      "error": null
+    },
+    "elapsed_seconds": 1.43
+  },
+  {
+    "query_def": {
+      "id": "E4",
+      "category": "edge_case",
+      "query": "Calcula calorias para 30 anos.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal",
+        "validator_save"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular as calorias diárias necessárias, preciso da altura também. Poderias fornecer a tua altura em centímetros?",
+      "error": null
+    },
+    "elapsed_seconds": 0.71
+  },
+  {
+    "query_def": {
+      "id": "E4",
+      "category": "edge_case",
+      "query": "Calcula calorias para 30 anos.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal",
+        "validator_save"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular as calorias diárias necessárias, preciso da altura também. Poderias fornecer a tua altura em centímetros?",
+      "error": null
+    },
+    "elapsed_seconds": 0.73
+  },
+  {
+    "query_def": {
+      "id": "E4",
+      "category": "edge_case",
+      "query": "Calcula calorias para 30 anos.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal",
+        "validator_save"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular as calorias diárias necessárias, preciso da altura também. Poderias fornecer a tua altura em centímetros?",
+      "error": null
+    },
+    "elapsed_seconds": 0.7
+  },
+  {
+    "query_def": {
+      "id": "E4",
+      "category": "edge_case",
+      "query": "Calcula calorias para 30 anos.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal",
+        "validator_save"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular as calorias diárias necessárias, preciso da altura também. Poderias fornecer a tua altura em centímetros?",
+      "error": null
+    },
+    "elapsed_seconds": 0.7
+  },
+  {
+    "query_def": {
+      "id": "E4",
+      "category": "edge_case",
+      "query": "Calcula calorias para 30 anos.",
+      "expected": {
+        "tool": null,
+        "should_refuse": true
+      },
+      "tests": [
+        "routing",
+        "refusal",
+        "validator_save"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "args_valid": null,
+      "refused_correctly": true,
+      "validator_saved": false,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "validation_failed": false,
+      "suspicious_args": [],
+      "response_text": "Para calcular as calorias diárias necessárias, preciso da altura também. Poderias fornecer a tua altura em centímetros?",
+      "error": null
+    },
+    "elapsed_seconds": 0.74
+  }
+]

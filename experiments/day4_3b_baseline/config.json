@@ -1,0 +1,14 @@
+{
+  "version": "day4_3b_baseline",
+  "timestamp": "2026-05-15T16:54:25.681917",
+  "test_set": "experiments\\test_set_day4.json",
+  "agent_config": {
+    "model": "qwen2.5:3b-instruct",
+    "rewriter_model": "qwen2.5:3b-instruct",
+    "pre_router_enabled": true
+  },
+  "repeats": 5,
+  "temperature": 0.0,
+  "rag_threshold": 0.5,
+  "rag_top_k": 3
+}

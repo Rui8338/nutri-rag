@@ -1,0 +1,1507 @@
+[
+  {
+    "query_def": {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.22",
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.593,
+        0.567,
+        0.522
+      ],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:\n\n- Para adultos, os hidratos de carbono devem representar entre 45% e 65% das suas necessidades ene"
+    },
+    "elapsed_seconds": 5.54
+  },
+  {
+    "query_def": {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.22",
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.593,
+        0.567,
+        0.522
+      ],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:\n\n- Para adultos, os hidratos de carbono devem representar entre 45% e 65% das suas necessidades ene"
+    },
+    "elapsed_seconds": 5.01
+  },
+  {
+    "query_def": {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.22",
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.593,
+        0.567,
+        0.522
+      ],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:\n\n- Para adultos, os hidratos de carbono devem representar entre 45% e 65% das suas necessidades ene"
+    },
+    "elapsed_seconds": 4.88
+  },
+  {
+    "query_def": {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.22",
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.593,
+        0.567,
+        0.522
+      ],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:\n\n- Para adultos, os hidratos de carbono devem representar entre 45% e 65% das suas necessidades ene"
+    },
+    "elapsed_seconds": 4.9
+  },
+  {
+    "query_def": {
+      "id": "R1",
+      "category": "rag_positive",
+      "query": "É verdade que comer hidratos à noite faz mal?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "hidratos de carbono consumo noturno impacto saude",
+        "original_query": "É verdade que comer hidratos à noite faz mal?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.22",
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.593,
+        0.567,
+        0.522
+      ],
+      "response_text": "De acordo com a literatura científica fornecida, comer hidratos de carbono à noite não é considerado prejudicial para a saúde. No entanto, o percentual recomendado varia dependendo da idade e do sexo:\n\n- Para adultos, os hidratos de carbono devem representar entre 45% e 65% das suas necessidades ene"
+    },
+    "elapsed_seconds": 4.93
+  },
+  {
+    "query_def": {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "fibra alimentar benefícios saúde intestina",
+        "original_query": "Quais são os benefícios da fibra alimentar?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "ISSN_Protein, p.11",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.711,
+        0.535,
+        0.513
+      ],
+      "response_text": "A fibra alimentar oferece vários benefícios para a saúde e o desempenho:\n\n- **Benefícios de Saúde:** A fibra ajuda na regulação do trânsito intestinal, contribuindo para uma melhor saúde digestiva. Além disso, pode ajudar a controlar os níveis de açúcar no sangue e reduzir o risco de doenças cardiov"
+    },
+    "elapsed_seconds": 7.82
+  },
+  {
+    "query_def": {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "fibra alimentar benefícios saúde intestina",
+        "original_query": "Quais são os benefícios da fibra alimentar?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "ISSN_Protein, p.11",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.711,
+        0.535,
+        0.513
+      ],
+      "response_text": "A fibra alimentar oferece vários benefícios para a saúde e o desempenho:\n\n- **Benefícios de Saúde:** A fibra ajuda na regulação do trânsito intestinal, contribuindo para uma melhor saúde digestiva. Além disso, pode ajudar a controlar os níveis de açúcar no sangue e reduzir o risco de doenças cardiov"
+    },
+    "elapsed_seconds": 7.6
+  },
+  {
+    "query_def": {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "fibra alimentar benefícios saúde intestina",
+        "original_query": "Quais são os benefícios da fibra alimentar?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "ISSN_Protein, p.11",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.711,
+        0.535,
+        0.513
+      ],
+      "response_text": "A fibra alimentar oferece vários benefícios para a saúde e o desempenho:\n\n- **Benefícios de Saúde:** A fibra ajuda na regulação do trânsito intestinal, contribuindo para uma melhor saúde digestiva. Além disso, pode ajudar a controlar os níveis de açúcar no sangue e reduzir o risco de doenças cardiov"
+    },
+    "elapsed_seconds": 7.57
+  },
+  {
+    "query_def": {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "fibra alimentar benefícios saúde intestina",
+        "original_query": "Quais são os benefícios da fibra alimentar?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "ISSN_Protein, p.11",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.711,
+        0.535,
+        0.513
+      ],
+      "response_text": "A fibra alimentar oferece vários benefícios para a saúde e o desempenho:\n\n- **Benefícios de Saúde:** A fibra ajuda na regulação do trânsito intestinal, contribuindo para uma melhor saúde digestiva. Além disso, pode ajudar a controlar os níveis de açúcar no sangue e reduzir o risco de doenças cardiov"
+    },
+    "elapsed_seconds": 7.63
+  },
+  {
+    "query_def": {
+      "id": "R2",
+      "category": "rag_positive",
+      "query": "Quais são os benefícios da fibra alimentar?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "fibra alimentar benefícios saúde intestina",
+        "original_query": "Quais são os benefícios da fibra alimentar?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "ISSN_Protein, p.11",
+        "Distribuicao_Alim, p.8"
+      ],
+      "scores": [
+        0.711,
+        0.535,
+        0.513
+      ],
+      "response_text": "A fibra alimentar oferece vários benefícios para a saúde e o desempenho:\n\n- **Benefícios de Saúde:** A fibra ajuda na regulação do trânsito intestinal, contribuindo para uma melhor saúde digestiva. Além disso, pode ajudar a controlar os níveis de açúcar no sangue e reduzir o risco de doenças cardiov"
+    },
+    "elapsed_seconds": 7.87
+  },
+  {
+    "query_def": {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "metabolismo proteínas organismo funcionamento",
+        "original_query": "Como é metabolizada a proteína no organismo?"
+      },
+      "sources": [
+        "ISSN_Protein, p.25",
+        "ISSN_Protein, p.17",
+        "ISSN_Protein, p.16"
+      ],
+      "scores": [
+        0.622,
+        0.62,
+        0.616
+      ],
+      "response_text": "A fibra alimentar é metabolizada no intestino e tem vários benefícios para a saúde:\n\n1. **Promove o crescimento intestinal**: A fibra ajuda a manter uma flora intestinal saudável, contribuindo para um intestino funcionando bem.\n\n2. **Ajuda na regulação do estômago**: A fibra aumenta a sensação de sa"
+    },
+    "elapsed_seconds": 25.19
+  },
+  {
+    "query_def": {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "metabolismo proteínas organismo funcionamento",
+        "original_query": "Como é metabolizada a proteína no organismo?"
+      },
+      "sources": [
+        "ISSN_Protein, p.25",
+        "ISSN_Protein, p.17",
+        "ISSN_Protein, p.16"
+      ],
+      "scores": [
+        0.622,
+        0.62,
+        0.616
+      ],
+      "response_text": "A fibra alimentar é metabolizada no intestino e tem vários benefícios para a saúde:\n\n1. **Promove o crescimento intestinal**: A fibra ajuda a manter uma flora intestinal saudável, contribuindo para um intestino funcionando bem.\n\n2. **Ajuda na regulação do estômago**: A fibra aumenta a sensação de sa"
+    },
+    "elapsed_seconds": 25.65
+  },
+  {
+    "query_def": {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "metabolismo proteínas organismo funcionamento",
+        "original_query": "Como é metabolizada a proteína no organismo?"
+      },
+      "sources": [
+        "ISSN_Protein, p.25",
+        "ISSN_Protein, p.17",
+        "ISSN_Protein, p.16"
+      ],
+      "scores": [
+        0.622,
+        0.62,
+        0.616
+      ],
+      "response_text": "A fibra alimentar é metabolizada no intestino e tem vários benefícios para a saúde:\n\n1. **Promove o crescimento intestinal**: A fibra ajuda a manter uma flora intestinal saudável, contribuindo para um intestino funcionando bem.\n\n2. **Ajuda na regulação do estômago**: A fibra aumenta a sensação de sa"
+    },
+    "elapsed_seconds": 30.13
+  },
+  {
+    "query_def": {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "metabolismo proteínas organismo funcionamento",
+        "original_query": "Como é metabolizada a proteína no organismo?"
+      },
+      "sources": [
+        "ISSN_Protein, p.25",
+        "ISSN_Protein, p.17",
+        "ISSN_Protein, p.16"
+      ],
+      "scores": [
+        0.622,
+        0.62,
+        0.616
+      ],
+      "response_text": "A fibra alimentar é metabolizada no intestino e tem vários benefícios para a saúde:\n\n1. **Promove o crescimento intestinal**: A fibra ajuda a manter uma flora intestinal saudável, contribuindo para um intestino funcionando bem.\n\n2. **Ajuda na regulação do estômago**: A fibra aumenta a sensação de sa"
+    },
+    "elapsed_seconds": 25.89
+  },
+  {
+    "query_def": {
+      "id": "R3",
+      "category": "rag_positive",
+      "query": "Como é metabolizada a proteína no organismo?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": false,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "metabolismo proteínas organismo funcionamento",
+        "original_query": "Como é metabolizada a proteína no organismo?"
+      },
+      "sources": [
+        "ISSN_Protein, p.25",
+        "ISSN_Protein, p.17",
+        "ISSN_Protein, p.16"
+      ],
+      "scores": [
+        0.622,
+        0.62,
+        0.616
+      ],
+      "response_text": "A fibra alimentar é metabolizada no intestino e tem vários benefícios para a saúde:\n\n1. **Promove o crescimento intestinal**: A fibra ajuda a manter uma flora intestinal saudável, contribuindo para um intestino funcionando bem.\n\n2. **Ajuda na regulação do estômago**: A fibra aumenta a sensação de sa"
+    },
+    "elapsed_seconds": 25.65
+  },
+  {
+    "query_def": {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "sódio consumo diário recomendado saúde",
+        "original_query": "Quanto sódio devo consumir por dia?"
+      },
+      "sources": [
+        "DGS_Roda, p.3",
+        "Distribuicao_Alim, p.20",
+        "Distribuicao_Alim, p.54"
+      ],
+      "scores": [
+        0.758,
+        0.598,
+        0.578
+      ],
+      "response_text": "De acordo com as recomendações da DGS (Direção-Geral de Saúde) e outras fontes citadas, a quantidade de sal que devemos consumir por dia deve ser inferior a 5g. Além disso, para a distribuição dos macronutrientes (hidratos de carbono, lipídicos e proteínas), as recomendações da OMS de 203 preconizam"
+    },
+    "elapsed_seconds": 6.09
+  },
+  {
+    "query_def": {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "sódio consumo diário recomendado saúde",
+        "original_query": "Quanto sódio devo consumir por dia?"
+      },
+      "sources": [
+        "DGS_Roda, p.3",
+        "Distribuicao_Alim, p.20",
+        "Distribuicao_Alim, p.54"
+      ],
+      "scores": [
+        0.758,
+        0.598,
+        0.578
+      ],
+      "response_text": "De acordo com as recomendações da DGS (Direção-Geral de Saúde) e outras fontes citadas, a quantidade de sal que devemos consumir por dia deve ser inferior a 5g. Além disso, para a distribuição dos macronutrientes (hidratos de carbono, lipídicos e proteínas), as recomendações da OMS de 203 preconizam"
+    },
+    "elapsed_seconds": 6.3
+  },
+  {
+    "query_def": {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "sódio consumo diário recomendado saúde",
+        "original_query": "Quanto sódio devo consumir por dia?"
+      },
+      "sources": [
+        "DGS_Roda, p.3",
+        "Distribuicao_Alim, p.20",
+        "Distribuicao_Alim, p.54"
+      ],
+      "scores": [
+        0.758,
+        0.598,
+        0.578
+      ],
+      "response_text": "De acordo com as recomendações da DGS (Direção-Geral de Saúde) e outras fontes citadas, a quantidade de sal que devemos consumir por dia deve ser inferior a 5g. Além disso, para a distribuição dos macronutrientes (hidratos de carbono, lipídicos e proteínas), as recomendações da OMS de 203 preconizam"
+    },
+    "elapsed_seconds": 6.39
+  },
+  {
+    "query_def": {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "sódio consumo diário recomendado saúde",
+        "original_query": "Quanto sódio devo consumir por dia?"
+      },
+      "sources": [
+        "DGS_Roda, p.3",
+        "Distribuicao_Alim, p.20",
+        "Distribuicao_Alim, p.54"
+      ],
+      "scores": [
+        0.758,
+        0.598,
+        0.578
+      ],
+      "response_text": "De acordo com as recomendações da DGS (Direção-Geral de Saúde) e outras fontes citadas, a quantidade de sal que devemos consumir por dia deve ser inferior a 5g. Além disso, para a distribuição dos macronutrientes (hidratos de carbono, lipídicos e proteínas), as recomendações da OMS de 203 preconizam"
+    },
+    "elapsed_seconds": 6.2
+  },
+  {
+    "query_def": {
+      "id": "R4",
+      "category": "rag_positive",
+      "query": "Quanto sódio devo consumir por dia?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": true,
+        "min_top_score": 0.5
+      },
+      "tests": [
+        "routing",
+        "retrieval_relevance",
+        "source_diversity"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": true,
+      "source_diverse": true,
+      "no_match_handled": null,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "sódio consumo diário recomendado saúde",
+        "original_query": "Quanto sódio devo consumir por dia?"
+      },
+      "sources": [
+        "DGS_Roda, p.3",
+        "Distribuicao_Alim, p.20",
+        "Distribuicao_Alim, p.54"
+      ],
+      "scores": [
+        0.758,
+        0.598,
+        0.578
+      ],
+      "response_text": "De acordo com as recomendações da DGS (Direção-Geral de Saúde) e outras fontes citadas, a quantidade de sal que devemos consumir por dia deve ser inferior a 5g. Além disso, para a distribuição dos macronutrientes (hidratos de carbono, lipídicos e proteínas), as recomendações da OMS de 203 preconizam"
+    },
+    "elapsed_seconds": 6.06
+  },
+  {
+    "query_def": {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão grelhado?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "salmão grelhado"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "O salmão grelhado contém **309.0 kcal** e **23.8g de proteína**. Não há hidratos ou gorduras mencionadas na informação fornecida, apenas fibra."
+    },
+    "elapsed_seconds": 3.19
+  },
+  {
+    "query_def": {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão grelhado?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "salmão grelhado"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "O salmão grelhado contém **309.0 kcal** e **23.8g de proteína**. Não há hidratos ou gorduras mencionadas na informação fornecida, apenas fibra."
+    },
+    "elapsed_seconds": 3.21
+  },
+  {
+    "query_def": {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão grelhado?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "salmão grelhado"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "O salmão grelhado contém **309.0 kcal** e **23.8g de proteína**. Não há hidratos ou gorduras mencionadas na informação fornecida, apenas fibra."
+    },
+    "elapsed_seconds": 3.13
+  },
+  {
+    "query_def": {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão grelhado?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "salmão grelhado"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "O salmão grelhado contém **309.0 kcal** e **23.8g de proteína**. Não há hidratos ou gorduras mencionadas na informação fornecida, apenas fibra."
+    },
+    "elapsed_seconds": 3.15
+  },
+  {
+    "query_def": {
+      "id": "X1",
+      "category": "cross_tool",
+      "query": "Quantas calorias tem o salmão grelhado?",
+      "expected": {
+        "tool": "lookup_food",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "lookup_food",
+      "actual_tool": "lookup_food",
+      "tool_args": {
+        "query": "salmão grelhado"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "O salmão grelhado contém **309.0 kcal** e **23.8g de proteína**. Não há hidratos ou gorduras mencionadas na informação fornecida, apenas fibra."
+    },
+    "elapsed_seconds": 3.59
+  },
+  {
+    "query_def": {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 178,
+        "fator_atividade": "moderado",
+        "idade": 30,
+        "peso_kg": 75,
+        "sexo": "masculino"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "Com base nos dados que forneceste, o teu Gasto Diário Energético (TDEE) é de aproximadamente 2662 kcal.\n\nDado este valor, se quiseres manter o teu peso atual, devias consumir cerca de **2662 calorias por dia**. Se tiveres objetivos diferentes (como emagrecimento ou ganho de massa muscular), isso pod"
+    },
+    "elapsed_seconds": 4.65
+  },
+  {
+    "query_def": {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "idade": 30,
+        "peso_kg": 75,
+        "sexo": "masculino",
+        "altura_cm": 178,
+        "fator_atividade": "moderado"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "Com base nos dados que forneceste, o teu Gasto Diário Energético (TDEE) é de aproximadamente 2662 kcal.\n\nDado este valor, se quiseres manter o teu peso atual, devias consumir cerca de **2662 calorias por dia**. Se tiveres objetivos diferentes (como emagrecimento ou ganho de massa muscular), isso pod"
+    },
+    "elapsed_seconds": 4.51
+  },
+  {
+    "query_def": {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 178,
+        "fator_atividade": "moderado",
+        "idade": 30,
+        "peso_kg": 75,
+        "sexo": "masculino"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "Com base nos dados que forneceste, o teu Gasto Diário Energético (TDEE) é de aproximadamente 2662 kcal.\n\nDado este valor, se quiseres manter o teu peso atual, devias consumir cerca de **2662 calorias por dia**. Se tiveres objetivos diferentes (como emagrecimento ou ganho de massa muscular), isso pod"
+    },
+    "elapsed_seconds": 4.39
+  },
+  {
+    "query_def": {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 178,
+        "fator_atividade": "moderado",
+        "idade": 30,
+        "peso_kg": 75,
+        "sexo": "masculino"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "Com base nos dados que forneceste, o teu Gasto Diário Energético (TDEE) é de aproximadamente 2662 kcal.\n\nDado este valor, se quiseres manter o teu peso atual, devias consumir cerca de **2662 calorias por dia**. Se tiveres objetivos diferentes (como emagrecimento ou ganho de massa muscular), isso pod"
+    },
+    "elapsed_seconds": 4.37
+  },
+  {
+    "query_def": {
+      "id": "X2",
+      "category": "cross_tool",
+      "query": "Quantas calorias devo comer? Tenho 30 anos, sou homem, 75kg, 178cm, treino moderado.",
+      "expected": {
+        "tool": "calculate_tdee",
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": "calculate_tdee",
+      "actual_tool": "calculate_tdee",
+      "tool_args": {
+        "altura_cm": 178,
+        "fator_atividade": "moderado",
+        "idade": 30,
+        "peso_kg": 75,
+        "sexo": "masculino"
+      },
+      "sources": null,
+      "scores": null,
+      "response_text": "Com base nos dados que forneceste, o teu Gasto Diário Energético (TDEE) é de aproximadamente 2662 kcal.\n\nDado este valor, se quiseres manter o teu peso atual, devias consumir cerca de **2662 calorias por dia**. Se tiveres objetivos diferentes (como emagrecimento ou ganho de massa muscular), isso pod"
+    },
+    "elapsed_seconds": 4.43
+  },
+  {
+    "query_def": {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": [
+        "routing",
+        "no_match_handling"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "shiitake benefícios saúde nutrientes",
+        "original_query": "Quais são os benefícios do cogumelo shiitake?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.42",
+        "Distribuicao_Alim, p.51"
+      ],
+      "scores": [
+        0.707,
+        0.687,
+        0.682
+      ],
+      "response_text": "Os benefícios do cogumelo shiitake incluem:\n\n- **Fibra**: Este é um dos nutrientes mais importantes que o cogumelo shiitake oferece. A fibra pode ajudar a melhorar a saúde digestiva e contribuir para uma dieta saudável.\n  \n- **Micronutrientes**: O estudo menciona que os valores de micronutrientes, c"
+    },
+    "elapsed_seconds": 6.03
+  },
+  {
+    "query_def": {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": [
+        "routing",
+        "no_match_handling"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "shiitake benefícios saúde nutrientes",
+        "original_query": "Quais são os benefícios do cogumelo shiitake?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.42",
+        "Distribuicao_Alim, p.51"
+      ],
+      "scores": [
+        0.707,
+        0.687,
+        0.682
+      ],
+      "response_text": "Os benefícios do cogumelo shiitake incluem:\n\n- **Fibra**: Este é um dos nutrientes mais importantes que o cogumelo shiitake oferece. A fibra pode ajudar a melhorar a saúde digestiva e contribuir para uma dieta saudável.\n  \n- **Micronutrientes**: O estudo menciona que os valores de micronutrientes, c"
+    },
+    "elapsed_seconds": 6.29
+  },
+  {
+    "query_def": {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": [
+        "routing",
+        "no_match_handling"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "shiitake benefícios saúde nutrientes",
+        "original_query": "Quais são os benefícios do cogumelo shiitake?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.42",
+        "Distribuicao_Alim, p.51"
+      ],
+      "scores": [
+        0.707,
+        0.687,
+        0.682
+      ],
+      "response_text": "Os benefícios do cogumelo shiitake incluem:\n\n- **Fibra**: Este é um dos nutrientes mais importantes que o cogumelo shiitake oferece. A fibra pode ajudar a melhorar a saúde digestiva e contribuir para uma dieta saudável.\n  \n- **Micronutrientes**: O estudo menciona que os valores de micronutrientes, c"
+    },
+    "elapsed_seconds": 5.93
+  },
+  {
+    "query_def": {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": [
+        "routing",
+        "no_match_handling"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "shiitake benefícios saúde nutrientes",
+        "original_query": "Quais são os benefícios do cogumelo shiitake?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.42",
+        "Distribuicao_Alim, p.51"
+      ],
+      "scores": [
+        0.707,
+        0.687,
+        0.682
+      ],
+      "response_text": "Os benefícios do cogumelo shiitake incluem:\n\n- **Fibra**: Este é um dos nutrientes mais importantes que o cogumelo shiitake oferece. A fibra pode ajudar a melhorar a saúde digestiva e contribuir para uma dieta saudável.\n  \n- **Micronutrientes**: O estudo menciona que os valores de micronutrientes, c"
+    },
+    "elapsed_seconds": 6.11
+  },
+  {
+    "query_def": {
+      "id": "N1",
+      "category": "rag_no_match",
+      "query": "Quais são os benefícios do cogumelo shiitake?",
+      "expected": {
+        "tool": "search_nutrition_principles",
+        "should_have_chunks": false,
+        "tool_result_expected": "none_or_low_score"
+      },
+      "tests": [
+        "routing",
+        "no_match_handling"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": false,
+      "expected_tool": "search_nutrition_principles",
+      "actual_tool": "search_nutrition_principles",
+      "tool_args": {
+        "query": "shiitake benefícios saúde nutrientes",
+        "original_query": "Quais são os benefícios do cogumelo shiitake?"
+      },
+      "sources": [
+        "Distribuicao_Alim, p.21",
+        "Distribuicao_Alim, p.42",
+        "Distribuicao_Alim, p.51"
+      ],
+      "scores": [
+        0.707,
+        0.687,
+        0.682
+      ],
+      "response_text": "Os benefícios do cogumelo shiitake incluem:\n\n- **Fibra**: Este é um dos nutrientes mais importantes que o cogumelo shiitake oferece. A fibra pode ajudar a melhorar a saúde digestiva e contribuir para uma dieta saudável.\n  \n- **Micronutrientes**: O estudo menciona que os valores de micronutrientes, c"
+    },
+    "elapsed_seconds": 6.09
+  },
+  {
+    "query_def": {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 1,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Não posso fornecer conselhos nutricionais personalizados, como se deve ou não seguir uma determinada dieta. Recomendo consultar um nutricionista ou profissional de saúde para obter orientações adequadas às tuas necessidades específicas."
+    },
+    "elapsed_seconds": 2.24
+  },
+  {
+    "query_def": {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 2,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Não posso fornecer conselhos nutricionais personalizados, como se deve ou não seguir uma determinada dieta. Recomendo consultar um nutricionista ou profissional de saúde para obter orientações adequadas às tuas necessidades específicas."
+    },
+    "elapsed_seconds": 1.17
+  },
+  {
+    "query_def": {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 3,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Não posso fornecer conselhos nutricionais personalizados, como se deve ou não seguir uma determinada dieta. Recomendo consultar um nutricionista ou profissional de saúde para obter orientações adequadas às tuas necessidades específicas."
+    },
+    "elapsed_seconds": 1.16
+  },
+  {
+    "query_def": {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 4,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Não posso fornecer conselhos nutricionais personalizados, como se deve ou não seguir uma determinada dieta. Recomendo consultar um nutricionista ou profissional de saúde para obter orientações adequadas às tuas necessidades específicas."
+    },
+    "elapsed_seconds": 1.33
+  },
+  {
+    "query_def": {
+      "id": "S1",
+      "category": "subjective",
+      "query": "Achas que devo seguir uma dieta paleo?",
+      "expected": {
+        "tool": null,
+        "should_have_chunks": false
+      },
+      "tests": [
+        "routing"
+      ]
+    },
+    "repetition": 5,
+    "evaluation": {
+      "routing_correct": true,
+      "retrieval_relevant": null,
+      "source_diverse": null,
+      "no_match_handled": null,
+      "expected_tool": null,
+      "actual_tool": null,
+      "tool_args": null,
+      "sources": null,
+      "scores": null,
+      "response_text": "Não posso fornecer conselhos nutricionais personalizados, como se deve ou não seguir uma determinada dieta. Recomendo consultar um nutricionista ou profissional de saúde para obter orientações adequadas às tuas necessidades específicas."
+    },
+    "elapsed_seconds": 1.46
+  }
+]
